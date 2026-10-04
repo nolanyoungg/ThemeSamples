@@ -8,11 +8,13 @@ An independent static website sample gallery. Open [the gallery](docs/index.html
 - `docs/Preview-Themes-Github/` — sample folders with their HTML pages and static assets.
 - `.gitignore` — local, editor, and OS clutter exclusions.
 
-There are 13 samples: **000–006, 011, and 013–017**. Numbers **007–010 and 012** are absent. Original folder and HTML filenames are retained.
+There are 21 samples: **000–006, 011, and 013–025**. Numbers **007–010 and 012** are absent. Original folder and HTML filenames are retained.
+
+The latest additions are Vector Systems (023), Stoneform Architects (024), and Morrow Museum (025). They include seven or eight pages each, developed dropdown navigation, mobile drawers, and local interactive demonstrations. Architectural and exhibition photography is generated and stored with its sample; the technology sample uses a local SVG and HTML interface graphics.
 
 ## Add a sample manually
 
-1. Add the next sample folder under `docs/Preview-Themes-Github/`, such as `018_nolan_young_theme_<description>/`.
+1. Add the next sample folder under `docs/Preview-Themes-Github/`, such as `026_nolan_young_theme_<description>/`.
 2. Include its HTML pages and required CSS, JavaScript, images, icons, SVGs, and other static assets.
 3. Add a corresponding entry/link to `docs/index.html` using the existing gallery conventions. Copy a card and update its unique ID, search text, title, page links, iframe name/target/source, and full-preview link. Update the collection and results counts.
 4. Check links and layout before uploading the changes, including search, page switching, desktop/tablet/mobile previews, and sample interactions.
