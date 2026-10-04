@@ -1,6 +1,6 @@
 # Theme Samples
 
-An independent static website sample gallery. Open [the gallery](docs/index.html) to browse designs, search by name, switch pages, and try desktop or mobile previews. You can also open `docs/index.html` directly in a browser.
+An independent static website sample gallery. Open [the gallery](docs/index.html) to browse designs, search by name, switch pages, and try desktop, tablet, or mobile previews. You can also open `docs/index.html` directly in a browser.
 
 ## Files
 
@@ -15,7 +15,7 @@ There are 13 samples: **000–006, 011, and 013–017**. Numbers **007–010 and
 1. Add the next sample folder under `docs/Preview-Themes-Github/`, such as `018_nolan_young_theme_<description>/`.
 2. Include its HTML pages and required CSS, JavaScript, images, icons, SVGs, and other static assets.
 3. Add a corresponding entry/link to `docs/index.html` using the existing gallery conventions. Copy a card and update its unique ID, search text, title, page links, iframe name/target/source, and full-preview link. Update the collection and results counts.
-4. Check links and layout before uploading the changes, including search, page switching, desktop/mobile previews, and sample interactions.
+4. Check links and layout before uploading the changes, including search, page switching, desktop/tablet/mobile previews, and sample interactions.
 
 Keep URLs relative and required assets inside `docs/` so the gallery works locally and beneath a website subdirectory. No installation or build step is needed.
 
