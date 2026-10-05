@@ -1,0 +1,79 @@
+NOCTURNE OBSERVATORY — IMAGE SOURCES AND REUSE
+Source and license pages checked: 2026-10-05
+
+All three raster images are real photographs/observations downloaded from
+the European Southern Observatory's official public image archive.
+No AI image generation was used for these replacement assets.
+
+LICENSE
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Legal text: https://creativecommons.org/licenses/by/4.0/legalcode.en
+Publisher's image-use policy: https://www.eso.org/public/copyright/
+
+This is a free-use license with attribution obligations, not a declaration
+that the photographs are copyright-free or in the public domain. It allows
+sharing and adaptation, including commercial use, subject to its conditions.
+ESO's source pages link to its CC BY 4.0 policy; none of the three selected
+image pages states a different license or a commercial-use restriction.
+
+Keep the full, unaltered photographer credit, source links, and license links
+with each image. Indicate modifications. Do not imply endorsement by ESO or
+the photographers. The sample does not use ESO logos. These selected images
+contain no recognizable people. Nocturne and its visitor programmes are
+fictional; the photographs are identified by their real subjects.
+
+1. la-silla-night.jpg
+Title: A road to the stars
+Full credit: ESO/P. Horálek
+Source: https://www.eso.org/public/images/potw2209a/
+Downloaded: https://cdn.eso.org/images/publicationjpg/potw2209a.jpg
+Published: 28 February 2022
+Subject: The road and telescopes at La Silla, Chile, beneath the Milky Way.
+Downloaded dimensions: 4000 x 2532 pixels.
+Local dimensions: 2400 x 1519 pixels.
+Use: Homepage hero, private-evening imagery, journal, article, and navigation.
+
+2. la-silla-telescope.jpg
+Title: A window to the galaxy
+Full credit: Zdeněk Bardon/ESO
+Source: https://www.eso.org/public/images/potw2247a/
+Downloaded: https://cdn.eso.org/images/publicationjpg/potw2247a.jpg
+Published: 21 November 2022
+Subject: The ESO 1.52-metre telescope and open dome at La Silla, Chile.
+Downloaded dimensions: 4000 x 2742 pixels.
+Local dimensions: 2400 x 1645 pixels.
+Use: Observatory page, observing-session cards, and navigation.
+
+3. saturn.jpg
+Title: Saturn - lord of the rings
+Full credit: ESO
+Source: https://www.eso.org/public/images/eso0204a/
+Downloaded: https://cdn.eso.org/images/publicationjpg/eso0204a.jpg
+Published: 31 January 2002
+Subject: Saturn observed with the VLT NAOS-CONICA instrument on 8 December
+2001, combining two near-infrared wavebands. This is an observation, not a
+photograph of a Nocturne installation.
+Downloaded dimensions: 4000 x 3060 pixels.
+Local dimensions: 2400 x 1836 pixels.
+Use: Exhibition page, exhibition cards, and navigation.
+
+MODIFICATIONS
+Images were proportionally resized and JPEG-encoded at quality 88 for local
+static hosting. CSS crops them to their layout containers and applies dark
+display overlays where needed for text legibility. No generative edits,
+content replacement, watermark removal, or compositing were performed.
+Source files remain available at the original URLs above.
+
+ON-PAGE ATTRIBUTION
+Each image has an adjacent visible credit linked to its source and to
+CC BY 4.0. The category-switching menu updates the credit and alt text with
+the image. A footer note explains the fictional venue, independence from
+ESO, and layout modifications, and links to this source record.
+
+OTHER ASSETS
+Geist and Geist Mono are locally hosted under the SIL Open Font License;
+see font-license.txt. Source: https://github.com/vercel/geist-font
+The Nocturne brand icon, interface shapes, and interactive sky/orbit studies
+are original HTML/CSS/SVG/canvas code. The sky study is a decorative diagram,
+explicitly labelled as an imagined sky rather than live astronomical data.

@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Meet the imagined Nocturne observatory, its great dome, and the idea behind the experience."
+    />
+    <meta name="theme-color" content="#0b1013" />
+    <title>A place for looking up — Nocturne Observatory</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/geist.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body class="page-observatory">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Nocturne home"
+          ><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="11" stroke="currentColor" />
+            <ellipse
+              cx="20"
+              cy="20"
+              rx="19"
+              ry="6"
+              transform="rotate(-35 20 20)"
+              stroke="currentColor"
+            />
+            <circle cx="30" cy="8" r="2" fill="currentColor" /></svg
+          ><span class="brand-text"
+            >NOCTURNE<small>Observatory &amp; museum</small></span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="discover-menu"
+          >
+            Discover
+            <svg viewBox="0 0 12 12" aria-hidden="true">
+              <path d="m2 4 4 4 4-4" fill="none" stroke="currentColor" />
+            </svg></button
+          ><a href="observatory.html">Our observatory</a
+          ><button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="notes-menu"
+          >
+            Field notes
+            <svg viewBox="0 0 12 12" aria-hidden="true">
+              <path d="m2 4 4 4 4-4" fill="none" stroke="currentColor" />
+            </svg>
+          </button>
+        </nav>
+        <a class="button nav-cta" href="visit.html"
+          >Plan a visit <span aria-hidden="true">↗</span></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M3 7h18M3 17h18"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="nav-panel" id="discover-menu" hidden>
+        <div class="nav-categories">
+          <p class="eyebrow muted">Find your perspective</p>
+          <button
+            class="nav-category"
+            type="button"
+            aria-pressed="true"
+            data-category
+            data-title="A first look. A lasting feeling."
+            data-copy="Small groups, thoughtful guides, and time at the eyepiece. Make a little room for the extraordinary."
+            data-detail="90-minute observing sessions"
+            data-href="experiences.html"
+            data-image="assets/la-silla-night.jpg"
+            data-image-alt="The Milky Way above the road and telescope domes at La Silla Observatory in Chile"
+            data-credit="ESO/P. Horálek"
+            data-source="https://www.eso.org/public/images/potw2209a/"
+            data-image-height="1519"
+          >
+            The night sky<span aria-hidden="true">↗</span></button
+          ><button
+            class="nav-category"
+            type="button"
+            aria-pressed="false"
+            data-category
+            data-title="A new sense of scale."
+            data-copy="Step inside an immersive exhibition about movement, perspective, and our place in a much bigger picture."
+            data-detail="The circular gallery · All ages"
+            data-href="exhibition.html"
+            data-image="assets/saturn.jpg"
+            data-image-alt="Saturn and its rings in a near-infrared image from ESO’s Very Large Telescope"
+            data-credit="ESO"
+            data-source="https://www.eso.org/public/images/eso0204a/"
+            data-image-height="1836"
+          >
+            Worlds in motion<span aria-hidden="true">↗</span></button
+          ><button
+            class="nav-category"
+            type="button"
+            aria-pressed="false"
+            data-category
+            data-title="A place built for looking up."
+            data-copy="Discover the great dome, the instrument at its heart, and the people who make the night feel a little closer."
+            data-detail="Our story · The great telescope"
+            data-href="observatory.html"
+            data-image="assets/la-silla-telescope.jpg"
+            data-image-alt="The ESO 1.52-metre telescope beneath an open dome and the Milky Way at La Silla"
+            data-credit="Zdeněk Bardon/ESO"
+            data-source="https://www.eso.org/public/images/potw2247a/"
+            data-image-height="1645"
+          >
+            The observatory<span aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <div class="nav-preview">
+          <figure class="menu-photograph">
+            <img
+              data-menu-image
+              src="assets/la-silla-night.jpg"
+              width="2400"
+              height="1519"
+              alt="The Milky Way above the road and telescope domes at La Silla Observatory in Chile"
+            />
+            <p class="photo-credit">
+              <a
+                data-menu-credit
+                href="https://www.eso.org/public/images/potw2209a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >ESO/P. Horálek</a
+              >
+              ·
+              <a
+                href="https://creativecommons.org/licenses/by/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CC BY 4.0</a
+              >
+            </p>
+          </figure>
+          <div>
+            <p class="eyebrow">A little closer</p>
+            <h2 data-menu-title>A first look. A lasting feeling.</h2>
+            <p data-menu-copy>
+              Small groups, thoughtful guides, and time at the eyepiece. Make a
+              little room for the extraordinary.
+            </p>
+            <small data-menu-detail>90-minute observing sessions</small
+            ><a class="text-link" data-menu-link href="experiences.html"
+              >Explore this experience ↗</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="nav-panel editorial-panel" id="notes-menu" hidden>
+        <div>
+          <p class="eyebrow">From the observatory</p>
+          <h2>Good questions.<br />New perspectives.</h2>
+          <a class="text-link" href="journal.html">All field notes ↗</a>
+        </div>
+        <div class="credited-card">
+          <a class="editorial-card" href="field-note.html"
+            ><img
+              src="assets/la-silla-night.jpg"
+              width="2400"
+              height="1519"
+              alt="The Milky Way above the road and telescope domes at La Silla Observatory in Chile"
+            />
+            <p class="eyebrow">Field note 01 · 5 min read</p>
+            <h3>The art of noticing.</h3>
+            <p>A small invitation to look a little longer.</p></a
+          >
+          <div class="credited-card">
+            <p class="photo-credit">
+              La Silla night sky ·
+              <a
+                href="https://www.eso.org/public/images/potw2209a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >ESO/P. Horálek</a
+              >
+              ·
+              <a
+                href="https://creativecommons.org/licenses/by/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CC BY 4.0</a
+              >
+            </p>
+          </div>
+          <a class="editorial-card" href="observatory.html#instrument"
+            ><img
+              src="assets/la-silla-telescope.jpg"
+              width="2400"
+              height="1645"
+              alt="The ESO 1.52-metre telescope beneath an open dome and the Milky Way at La Silla"
+            />
+            <p class="eyebrow">Inside Nocturne</p>
+            <h3>A room with a different view.</h3>
+            <p>Meet the instrument at the heart of the great dome.</p></a
+          >
+          <p class="photo-credit">
+            La Silla telescope ·
+            <a
+              href="https://www.eso.org/public/images/potw2247a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Zdeněk Bardon/ESO</a
+            >
+            ·
+            <a
+              href="https://creativecommons.org/licenses/by/4.0/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >CC BY 4.0</a
+            >
+          </p>
+        </div>
+      </div>
+    </header>
+    <div class="nav-backdrop" hidden></div>
+    <aside
+      id="mobile-drawer"
+      class="drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation"
+      hidden
+    >
+      <div class="drawer-top">
+        <a class="brand" href="index.html" aria-label="Nocturne home"
+          ><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="11" stroke="currentColor" />
+            <ellipse
+              cx="20"
+              cy="20"
+              rx="19"
+              ry="6"
+              transform="rotate(-35 20 20)"
+              stroke="currentColor"
+            />
+            <circle cx="30" cy="8" r="2" fill="currentColor" /></svg
+          ><span class="brand-text"
+            >NOCTURNE<small>Observatory &amp; museum</small></span
+          ></a
+        ><button
+          type="button"
+          class="drawer-close"
+          aria-label="Close navigation"
+        >
+          ×
+        </button>
+      </div>
+      <nav aria-label="Mobile navigation">
+        <details>
+          <summary>Discover</summary>
+          <a href="experiences.html">The night sky</a
+          ><a href="exhibition.html">Worlds in motion</a
+          ><a href="observatory.html">The observatory</a>
+        </details>
+        <a href="observatory.html">Our observatory</a>
+        <details>
+          <summary>Field notes</summary>
+          <a href="journal.html">From the notebook</a
+          ><a href="field-note.html">The art of noticing</a
+          ><a href="observatory.html#instrument">Inside the great dome</a>
+        </details>
+      </nav>
+      <a class="button" href="visit.html">Plan a visit ↗</a>
+      <p class="drawer-note">
+        A quieter place.<br />A wider perspective.<br />A little closer to the
+        infinite.
+      </p>
+    </aside>
+    <main id="main">
+      <section class="page-intro wrap">
+        <p class="eyebrow">Our observatory / Aster Ridge</p>
+        <h1>Built for<br /><em>a wider view.</em></h1>
+        <p class="lead">
+          A place at the edge of the everyday. Nocturne brings the instrument,
+          the landscape, and the visitor into one quiet conversation.
+        </p>
+      </section>
+      <div class="wrap">
+        <img
+          class="image-banner"
+          src="assets/la-silla-telescope.jpg"
+          width="2400"
+          height="1645"
+          alt="The ESO 1.52-metre telescope beneath an open dome and the Milky Way at La Silla"
+        />
+        <p class="photo-credit">
+          La Silla telescope ·
+          <a
+            href="https://www.eso.org/public/images/potw2247a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Zdeněk Bardon/ESO</a
+          >
+          ·
+          <a
+            href="https://creativecommons.org/licenses/by/4.0/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >CC BY 4.0</a
+          >
+        </p>
+      </div>
+      <section class="section wrap split">
+        <div>
+          <p class="eyebrow">The idea behind the place</p>
+          <h2>Not more to do.<br /><em>More to notice.</em></h2>
+        </div>
+        <div>
+          <p class="lead">
+            Nocturne began as an idea for a different kind of public space:
+            somewhere people could slow down together.
+          </p>
+          <p style="margin-top: 24px">
+            In the story of this fictional observatory, the first dome opened in
+            1987 with a simple invitation. Come up to the ridge, spend time with
+            a guide, and leave with a question you did not arrive with.
+          </p>
+          <p style="margin-top: 20px">
+            The gallery came later. So did the terrace, the gathering room, and
+            the field notes. Each addition serves the same purpose: to make
+            looking closely feel welcoming, rather than reserved for people who
+            already know the answers.
+          </p>
+        </div>
+      </section>
+      <section class="section wrap rule" id="instrument">
+        <div class="section-top">
+          <div>
+            <p class="eyebrow">Inside the great dome</p>
+            <h2>A room with<br /><em>a different view.</em></h2>
+          </div>
+          <p>
+            Warm brass, a curved timber ceiling, and a small opening into a much
+            larger world.
+          </p>
+        </div>
+        <div class="split">
+          <div class="timeline">
+            <div>
+              <strong>1987</strong>
+              <section>
+                <h3>The first invitation.</h3>
+                <p>
+                  The imagined founding dome opens around a public observing
+                  programme and the belief that curiosity belongs to everyone.
+                </p>
+              </section>
+            </div>
+            <div>
+              <strong>2008</strong>
+              <section>
+                <h3>Space to gather.</h3>
+                <p>
+                  A terrace and gathering room extend the experience beyond the
+                  eyepiece, making time for the conversations that follow.
+                </p>
+              </section>
+            </div>
+            <div>
+              <strong>Today</strong>
+              <section>
+                <h3>A wider perspective.</h3>
+                <p>
+                  The exhibition gallery brings a more physical, artistic way to
+                  explore the same big questions.
+                </p>
+              </section>
+            </div>
+          </div>
+          <div>
+            <p class="lead">
+              The telescope is the centre of the room, but the experience is
+              built around people.
+            </p>
+            <p style="margin-top: 25px">
+              Our imagined guides introduce the instrument before asking you to
+              look through it. There is time to understand what you are doing,
+              adjust to the pace of the evening, and share what you notice with
+              someone beside you.
+            </p>
+            <p style="margin-top: 20px">
+              The photograph above shows the real ESO 1.52-metre telescope at La
+              Silla, photographed by Zdeněk Bardon. Its remarkable view of the
+              night sky provides a reference for this fictional public
+              observatory concept.
+            </p>
+            <a
+              class="text-link"
+              href="experiences.html"
+              style="margin-top: 25px"
+              >Explore an evening at Nocturne ↗</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="light-section">
+        <div class="section wrap">
+          <p class="eyebrow">What guides the experience</p>
+          <div class="grid-3">
+            <article>
+              <h3 style="margin-bottom: 18px">Curiosity comes first.</h3>
+              <p>
+                No vocabulary test. No pressure to know the answer. A thoughtful
+                introduction gives every visitor a place to begin.
+              </p>
+            </article>
+            <article>
+              <h3 style="margin-bottom: 18px">Leave room for quiet.</h3>
+              <p>
+                The spaces are designed around gentle transitions, a slower
+                pace, and moments that do not need to be filled.
+              </p>
+            </article>
+            <article>
+              <h3 style="margin-bottom: 18px">Make the view a shared one.</h3>
+              <p>
+                Different ages, experiences, and questions make the evening
+                richer. A guide's role is to open the conversation.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="closing wrap">
+        <div>
+          <p class="eyebrow">A little less ordinary</p>
+          <h2>The night is<br /><em>yours to discover.</em></h2>
+        </div>
+        <a class="button" href="visit.html"
+          >Find your night <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Nocturne home"
+            ><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <circle cx="20" cy="20" r="11" stroke="currentColor" />
+              <ellipse
+                cx="20"
+                cy="20"
+                rx="19"
+                ry="6"
+                transform="rotate(-35 20 20)"
+                stroke="currentColor"
+              />
+              <circle cx="30" cy="8" r="2" fill="currentColor" /></svg
+            ><span class="brand-text"
+              >NOCTURNE<small>Observatory &amp; museum</small></span
+            ></a
+          >
+          <p>
+            An imagined mountain observatory for curious minds. A little closer
+            to the infinite.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h2>Find your night</h2>
+          <nav aria-label="Explore Nocturne">
+            <a href="experiences.html">Experiences</a
+            ><a href="exhibition.html">Worlds in motion</a
+            ><a href="observatory.html">Our observatory</a
+            ><a href="visit.html">Plan a visit</a>
+          </nav>
+        </div>
+        <div class="footer-links">
+          <h2>Stay curious</h2>
+          <nav aria-label="Nocturne resources">
+            <a href="journal.html">Field notes</a
+            ><a href="field-note.html">The art of noticing</a
+            ><a href="visit.html#access">Access &amp; practical details</a
+            ><a href="visit.html#questions">Your questions</a>
+          </nav>
+        </div>
+      </div>
+      <div class="photography-note" id="photography">
+        <p>Real photographs. An imagined destination.</p>
+        <p>
+          Nocturne is a fictional design concept, independent of ESO and the
+          photographers. Images are resized and cropped for the layouts, with
+          display overlays in the hero sections.
+          <a href="assets/sources.txt">Image sources &amp; reuse details ↗</a>
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nocturne · Fictional venue / Original design preview</span
+        ><span>Look up. Feel a little different.</span
+        ><button class="motion-toggle" type="button" aria-pressed="false">
+          Pause motion
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
