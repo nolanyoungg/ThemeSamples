@@ -1,0 +1,1233 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore an Acme AI workflow platform sample with dashboard previews, local demonstrations, pricing, and a complete blog."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>AI workflow platform | acme.ai</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/inter-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body class="page-index">
+    <svg class="sr-only" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <symbol id="i-blocks" viewBox="0 0 24 24">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linejoin="round"
+          >
+            <rect x="14" y="2" width="8" height="8" rx="1" />
+            <rect x="2" y="8" width="8" height="8" rx="1" />
+            <rect x="2" y="16" width="8" height="6" rx="1" />
+            <rect x="10" y="14" width="8" height="8" rx="1" />
+          </g>
+        </symbol>
+        <symbol id="i-chevron" viewBox="0 0 24 24">
+          <path
+            d="m6 9 6 6 6-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-data" viewBox="0 0 24 24">
+          <g fill="none" stroke="currentColor" stroke-width="1.5">
+            <ellipse cx="12" cy="5" rx="8" ry="3" />
+            <path d="M4 5v7c0 4 16 4 16 0V5M4 12v7c0 4 16 4 16 0v-7" />
+          </g>
+        </symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24">
+          <circle
+            cx="12"
+            cy="12"
+            r="9"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path
+            d="M12 6v6l4 2"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24">
+          <path
+            d="m12 2 8 4v6c0 5-8 10-8 10S4 17 4 12V6l8-4Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path
+            d="m8 12 3 3 5-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+        </symbol>
+        <symbol id="i-upload" viewBox="0 0 24 24">
+          <path
+            d="M4 16v5h16v-5M12 17V3m-5 5 5-5 5 5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          />
+        </symbol>
+        <symbol id="i-play" viewBox="0 0 24 24">
+          <path d="m7 4 13 8-13 8V4Z" fill="currentColor" />
+        </symbol>
+        <symbol id="i-chart" viewBox="0 0 24 24">
+          <path
+            d="M3 3v18h18M7 16v-5m5 5V7m5 9v-8"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+          />
+        </symbol>
+        <symbol id="i-message" viewBox="0 0 24 24">
+          <path
+            d="M21 15a3 3 0 0 1-3 3H8l-5 4V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v9Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path d="M7 8h10M7 12h7" stroke="currentColor" stroke-width="1.5" />
+        </symbol>
+        <symbol id="i-trend" viewBox="0 0 24 24">
+          <path
+            d="m3 17 6-6 4 4 8-10m-7 0h7v7"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-report" viewBox="0 0 24 24">
+          <path
+            d="M5 2h10l4 4v16H5V2Zm9 0v5h5M8 11h8M8 15h8M8 19h5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+        </symbol>
+        <symbol id="i-quote" viewBox="0 0 24 24">
+          <path
+            d="M3 4h8v8l-5 8H2l4-8H3V4Zm12 0h8v8l-5 8h-4l4-8h-3V4Z"
+            fill="currentColor"
+          />
+        </symbol>
+      </defs></svg
+    ><a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="acme.ai home"
+          ><svg class="" aria-hidden="true"><use href="#i-blocks" /></svg
+          ><span>acme.ai</span></a
+        >
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="features-menu"
+          >
+            Features
+            <svg class="chevron" aria-hidden="true">
+              <use href="#i-chevron" />
+            </svg></button
+          ><button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="solutions-menu"
+          >
+            Solutions
+            <svg class="chevron" aria-hidden="true">
+              <use href="#i-chevron" />
+            </svg></button
+          ><a href="blog.html">Blog</a>
+        </nav>
+        <div class="account-links">
+          <a class="button secondary login-link" href="login.html">Login</a
+          ><a class="button" href="signup.html"
+            ><svg class="" aria-hidden="true"><use href="#i-blocks" /></svg>Get
+            Started for Free</a
+          >
+        </div>
+        <button
+          type="button"
+          class="menu-button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M4 6h16M4 12h16M4 18h16"
+              stroke="currentColor"
+              stroke-width="1.7"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="nav-dropdown features-menu" id="features-menu" hidden>
+        <a class="menu-featured" href="index.html#solution"
+          ><svg class="" aria-hidden="true"><use href="#i-blocks" /></svg>
+          <h2>AI-Powered Automation</h2>
+          <p>A connected space for the work you do every day.</p></a
+        >
+        <div class="menu-items">
+          <a href="index.html#how-it-works"
+            ><strong>Task Automation</strong>
+            <p>Give recurring work a clear, repeatable process.</p></a
+          ><a href="index.html#features"
+            ><strong>Workflow Optimization</strong>
+            <p>Keep useful insights close to your next decision.</p></a
+          ><a href="index.html#solution"
+            ><strong>Intelligent Scheduling</strong>
+            <p>Bring your tasks, tools, and people together.</p></a
+          >
+        </div>
+      </div>
+      <div class="nav-dropdown solutions-menu" id="solutions-menu" hidden>
+        <a href="index.html#pricing"
+          ><strong>For Small Businesses</strong>
+          <p>A practical starting point for a growing team.</p></a
+        ><a href="index.html#pricing"
+          ><strong>Enterprise</strong>
+          <p>A shared foundation for more complex work.</p></a
+        ><a href="index.html#features"
+          ><strong>Developers</strong>
+          <p>Connect your applications and project context.</p></a
+        ><a href="index.html#solution"
+          ><strong>Healthcare</strong>
+          <p>Organize administrative workflows with care.</p></a
+        ><a href="index.html#solution"
+          ><strong>Finance</strong>
+          <p>Make recurring reporting easier to follow.</p></a
+        ><a href="index.html#solution"
+          ><strong>Education</strong>
+          <p>Keep teams and administrative tasks in sync.</p></a
+        >
+      </div>
+    </header>
+    <div class="nav-shade" hidden></div>
+    <aside
+      id="mobile-drawer"
+      class="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation"
+      hidden
+    >
+      <div class="drawer-top">
+        <a class="brand" href="index.html" aria-label="acme.ai home"
+          ><svg class="" aria-hidden="true"><use href="#i-blocks" /></svg
+          ><span>acme.ai</span></a
+        ><button
+          type="button"
+          class="drawer-close"
+          aria-label="Close navigation"
+        >
+          ×
+        </button>
+      </div>
+      <details>
+        <summary>Features</summary>
+        <a href="index.html#solution">AI-Powered Automation</a
+        ><a href="index.html#how-it-works">Task Automation</a
+        ><a href="index.html#features">Workflow Optimization</a>
+      </details>
+      <details>
+        <summary>Solutions</summary>
+        <a href="index.html#pricing">Small Businesses</a
+        ><a href="index.html#pricing">Enterprise</a
+        ><a href="index.html#features">Developers</a
+        ><a href="index.html#solution">Healthcare, Finance &amp; Education</a>
+      </details>
+      <a class="mobile-blog" href="blog.html">Blog</a>
+      <div class="drawer-actions">
+        <a class="button secondary" href="login.html">Login</a
+        ><a class="button" href="signup.html"
+          ><svg class="" aria-hidden="true"><use href="#i-blocks" /></svg>Get
+          Started for Free</a
+        >
+      </div>
+    </aside>
+    <main id="main">
+      <section id="hero" class="hero">
+        <a class="announcement" href="introducing-acme-ai.html"
+          ><span>📣 Announcement</span>Introducing Acme.ai</a
+        >
+        <h1 aria-label="Automate your workflow with AI">
+          <span>Automate</span><span>your</span><span>workflow</span
+          ><span>with AI</span>
+        </h1>
+        <p class="hero-description">
+          Bring your data and your work together. Discover a clearer path with
+          AI.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="signup.html"
+            ><svg class="" aria-hidden="true"><use href="#i-blocks" /></svg>Get
+            started for free</a
+          >
+        </div>
+        <p class="trial-note">Explore a 7-day trial. No card needed.</p>
+        <div class="hero-media">
+          <button
+            type="button"
+            class="video-trigger"
+            data-open-tour
+            aria-label="Watch the product walkthrough"
+          >
+            <img
+              src="assets/dashboard.png"
+              alt="Hero dashboard preview"
+              width="1336"
+              height="800"
+              fetchpriority="high"
+            /><span class="play-button"
+              ><svg class="" aria-hidden="true"><use href="#i-play" /></svg
+            ></span>
+          </button>
+        </div>
+      </section>
+      <section id="logos" class="logos">
+        <div class="container">
+          <h2>Trusted by leading teams</h2>
+          <div class="logo-window">
+            <div class="logo-track">
+              <img
+                src="assets/logo-google.svg"
+                alt="Google"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-microsoft.svg"
+                alt="Microsoft"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-amazon.svg"
+                alt="Amazon"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-netflix.svg"
+                alt="Netflix"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-youtube.svg"
+                alt="YouTube"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-instagram.svg"
+                alt="Instagram"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-uber.svg"
+                alt="Uber"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-spotify.svg"
+                alt="Spotify"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><span class="sr-only"
+                >The logos are illustrative reference imagery.</span
+              ><img
+                src="assets/logo-google.svg"
+                aria-hidden="true"
+                alt="Google"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-microsoft.svg"
+                aria-hidden="true"
+                alt="Microsoft"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-amazon.svg"
+                aria-hidden="true"
+                alt="Amazon"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-netflix.svg"
+                aria-hidden="true"
+                alt="Netflix"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-youtube.svg"
+                aria-hidden="true"
+                alt="YouTube"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-instagram.svg"
+                aria-hidden="true"
+                alt="Instagram"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-uber.svg"
+                aria-hidden="true"
+                alt="Uber"
+                width="112"
+                height="40"
+                loading="lazy"
+              /><img
+                src="assets/logo-spotify.svg"
+                aria-hidden="true"
+                alt="Spotify"
+                width="112"
+                height="40"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="problem">
+        <div class="container section-pad">
+          <div class="section-heading">
+            <p class="eyebrow">Problem</p>
+            <h2>Manually entering your data is a hassle.</h2>
+          </div>
+          <div class="problem-grid">
+            <article class="problem-card reveal">
+              <svg class="" aria-hidden="true"><use href="#i-data" /></svg>
+              <h3>Data Overload</h3>
+              <p>
+                Useful information is spread across files, messages, and
+                disconnected systems. Bringing it together can take longer than
+                answering the question that started the work.
+              </p>
+            </article>
+            <article class="problem-card reveal">
+              <svg class="" aria-hidden="true"><use href="#i-clock" /></svg>
+              <h3>Slow Decision-Making</h3>
+              <p>
+                A report arrives after the conversation has moved on. Teams
+                spend valuable time rebuilding context instead of choosing a
+                useful next step.
+              </p>
+            </article>
+            <article class="problem-card reveal">
+              <svg class="" aria-hidden="true"><use href="#i-shield" /></svg>
+              <h3>Data Security Concerns</h3>
+              <p>
+                New tools introduce new questions about access and
+                responsibility. Teams need clear boundaries and a process they
+                can understand before they begin.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="solution" class="solution">
+        <div class="container section-pad">
+          <div class="section-heading">
+            <p class="eyebrow">Solution</p>
+            <h2>Put your data to work with AI workflows.</h2>
+            <p>
+              Give your team a useful working environment, with the context,
+              connections, and clarity to move an idea forward.
+            </p>
+          </div>
+          <div class="bento-grid">
+            <article class="bento-card reveal">
+              <h3>Advanced AI Algorithms</h3>
+              <p>
+                Bring your information into focus. Find the patterns worth
+                exploring and keep the evidence beside the conclusion.
+              </p>
+              <div class="browser-frame">
+                <div class="browser-chrome" aria-hidden="true">
+                  <i></i><i></i><i></i><span>https://acme.ai</span>↗
+                </div>
+                <img
+                  src="assets/dashboard.png"
+                  alt="Advanced AI Algorithms dashboard example"
+                  width="1336"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+            </article>
+            <article class="bento-card reveal">
+              <h3>Secure Data Handling</h3>
+              <p>
+                Make context and access deliberate. Keep each workflow scoped to
+                the information the task actually needs.
+              </p>
+              <div class="browser-frame">
+                <div class="browser-chrome" aria-hidden="true">
+                  <i></i><i></i><i></i><span>https://acme.ai</span>↗
+                </div>
+                <img
+                  src="assets/dashboard.png"
+                  alt="Secure Data Handling dashboard example"
+                  width="1336"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+            </article>
+            <article class="bento-card tall reveal">
+              <h3>Seamless Integration</h3>
+              <p>
+                Give your existing tools a shared place to connect. Keep the
+                context of the project close to the work.
+              </p>
+              <div class="browser-frame">
+                <div class="browser-chrome" aria-hidden="true">
+                  <i></i><i></i><i></i><span>https://acme.ai</span>↗
+                </div>
+                <img
+                  src="assets/dashboard.png"
+                  alt="Seamless Integration dashboard example"
+                  width="1336"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+            </article>
+            <article class="bento-card wide reveal">
+              <h3>Customizable Solutions</h3>
+              <p>
+                Start with a workflow that makes sense, then adapt the details
+                to your team. Keep useful structure without adding unnecessary
+                steps.
+              </p>
+              <div class="browser-frame">
+                <div class="browser-chrome" aria-hidden="true">
+                  <i></i><i></i><i></i><span>https://acme.ai</span>↗
+                </div>
+                <img
+                  src="assets/dashboard.png"
+                  alt="Customizable Solutions dashboard example"
+                  width="1336"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works">
+        <div class="container section-pad">
+          <div class="section-heading">
+            <p class="eyebrow">How it works</p>
+            <h2>Just 3 steps to get started</h2>
+          </div>
+          <div class="workflow-layout">
+            <div class="step-list" aria-label="Workflow steps">
+              <button
+                type="button"
+                class="step-button"
+                data-step="0"
+                aria-pressed="true"
+                aria-controls="workflow-panel"
+              >
+                <svg class="" aria-hidden="true"><use href="#i-upload" /></svg
+                ><span
+                  ><strong>1. Upload Your Data</strong>
+                  <p>
+                    Start with the files and references relevant to your
+                    question. Bring a small, considered collection into one
+                    working space.
+                  </p></span
+                ></button
+              ><button
+                type="button"
+                class="step-button"
+                data-step="1"
+                aria-pressed="false"
+                aria-controls="workflow-panel"
+              >
+                <svg class="" aria-hidden="true"><use href="#i-play" /></svg
+                ><span
+                  ><strong>2. Start the Analysis</strong>
+                  <p>
+                    Choose an outcome and let the demonstration walk through a
+                    sample review. Follow the steps as the information is
+                    organized.
+                  </p></span
+                ></button
+              ><button
+                type="button"
+                class="step-button"
+                data-step="2"
+                aria-pressed="false"
+                aria-controls="workflow-panel"
+              >
+                <svg class="" aria-hidden="true"><use href="#i-chart" /></svg
+                ><span
+                  ><strong>3. Review the Insights</strong>
+                  <p>
+                    Look at the result, check its context, and decide what
+                    should happen next. A useful answer makes the next action
+                    easier to see.
+                  </p></span
+                >
+              </button>
+            </div>
+            <div
+              class="workflow-preview"
+              id="workflow-panel"
+              aria-live="polite"
+            >
+              <div class="browser-frame">
+                <div class="browser-chrome" aria-hidden="true">
+                  <i></i><i></i><i></i><span>https://acme.ai</span>↗
+                </div>
+                <img
+                  src="assets/dashboard.png"
+                  alt="Sample data in the Acme workspace"
+                  width="1336"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+              <span class="preview-tag" data-step-tag>Step 1 / Import</span>
+              <p class="preview-caption" data-step-caption>
+                Start with the information you already have.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial-highlight">
+        <div class="container section-pad">
+          <div class="section-heading">
+            <p class="eyebrow">Testimonial highlight</p>
+            <h2>A more connected working day.</h2>
+          </div>
+          <div class="highlight-wrap">
+            <div class="highlight-window">
+              <article class="highlight-card" aria-live="polite">
+                <svg class="quote-mark" aria-hidden="true">
+                  <use href="#i-quote" />
+                </svg>
+                <blockquote data-highlight-quote>
+                  Our team used to spend the morning stitching together files
+                  and status reports. Now the useful context has a shared home.
+                  We can move from a question to a considered next step without
+                  rebuilding the same picture every day. The work feels calmer,
+                  and our conversations are about decisions instead of finding
+                  the right document.
+                </blockquote>
+                <img
+                  class="company-mark"
+                  data-highlight-logo
+                  src="assets/logo-google.svg"
+                  alt="Google reference logo"
+                  width="112"
+                  height="40"
+                />
+                <div class="highlight-person">
+                  <strong data-highlight-name>Leslie Alexander</strong
+                  ><span data-highlight-role
+                    >Product designer · Illustrative story</span
+                  >
+                </div>
+              </article>
+            </div>
+            <button
+              type="button"
+              class="carousel-arrow previous"
+              data-highlight-prev
+              aria-label="Previous slide"
+              disabled
+            >
+              ←</button
+            ><button
+              type="button"
+              class="carousel-arrow next"
+              data-highlight-next
+              aria-label="Next slide"
+            >
+              →
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="container section-pad">
+          <div class="section-heading">
+            <p class="eyebrow">Features</p>
+            <h2>A clear view of the work ahead.</h2>
+          </div>
+          <div
+            class="feature-tabs"
+            role="tablist"
+            aria-label="Product capabilities"
+          >
+            <button
+              type="button"
+              class="feature-tab"
+              role="tab"
+              id="feature-tab-0"
+              aria-selected="true"
+              aria-controls="feature-panel"
+              tabindex="0"
+              data-feature="0"
+            >
+              <svg class="" aria-hidden="true"><use href="#i-chart" /></svg
+              ><strong>AI-Powered Dashboard</strong>
+              <p>Keep the information that matters in view.</p></button
+            ><button
+              type="button"
+              class="feature-tab"
+              role="tab"
+              id="feature-tab-1"
+              aria-selected="false"
+              aria-controls="feature-panel"
+              tabindex="-1"
+              data-feature="1"
+            >
+              <svg class="" aria-hidden="true"><use href="#i-message" /></svg
+              ><strong>Natural Language Processing</strong>
+              <p>Ask a clear question in everyday language.</p></button
+            ><button
+              type="button"
+              class="feature-tab"
+              role="tab"
+              id="feature-tab-2"
+              aria-selected="false"
+              aria-controls="feature-panel"
+              tabindex="-1"
+              data-feature="2"
+            >
+              <svg class="" aria-hidden="true"><use href="#i-trend" /></svg
+              ><strong>Predictive Analytics</strong>
+              <p>Explore patterns and possible next steps.</p></button
+            ><button
+              type="button"
+              class="feature-tab"
+              role="tab"
+              id="feature-tab-3"
+              aria-selected="false"
+              aria-controls="feature-panel"
+              tabindex="-1"
+              data-feature="3"
+            >
+              <svg class="" aria-hidden="true"><use href="#i-report" /></svg
+              ><strong>Automated Reporting</strong>
+              <p>Bring the findings into a shareable format.</p>
+            </button>
+          </div>
+          <div
+            class="feature-screen"
+            id="feature-panel"
+            role="tabpanel"
+            aria-labelledby="feature-tab-0"
+          >
+            <div class="browser-frame">
+              <div class="browser-chrome" aria-hidden="true">
+                <i></i><i></i><i></i><span>https://acme.ai</span>↗
+              </div>
+              <img
+                src="assets/dashboard.png"
+                alt="AI-powered dashboard example"
+                width="1336"
+                height="800"
+                loading="lazy"
+              />
+            </div>
+            <p class="preview-caption" data-feature-caption>
+              AI-Powered Dashboard — a shared view of the information that
+              matters.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <div class="container section-pad">
+          <div class="section-heading">
+            <p class="eyebrow">Testimonials</p>
+            <h2>Good work starts with a shared picture.</h2>
+          </div>
+          <div
+            class="testimonials-grid"
+            aria-label="Illustrative customer stories"
+          >
+            <div class="testimonial-column">
+              <div
+                class="testimonial-track"
+                data-quotes="0"
+                style="--delay: -0s"
+              ></div>
+            </div>
+            <div class="testimonial-column">
+              <div
+                class="testimonial-track"
+                data-quotes="1"
+                style="--delay: -6s"
+              ></div>
+            </div>
+            <div class="testimonial-column">
+              <div
+                class="testimonial-track"
+                data-quotes="2"
+                style="--delay: -12s"
+              ></div>
+            </div>
+            <div class="testimonial-column">
+              <div
+                class="testimonial-track"
+                data-quotes="3"
+                style="--delay: -18s"
+              ></div>
+            </div>
+            <div class="testimonial-column">
+              <div
+                class="testimonial-track"
+                data-quotes="4"
+                style="--delay: -24s"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing">
+        <div class="container section-pad">
+          <div class="section-heading">
+            <p class="eyebrow">Pricing</p>
+            <h2>Find a plan that fits your next chapter.</h2>
+          </div>
+          <div class="billing">
+            <span>Monthly</span
+            ><button
+              type="button"
+              class="billing-switch"
+              role="switch"
+              aria-checked="false"
+              aria-label="Yearly billing"
+            ></button
+            ><span>Yearly</span>
+          </div>
+          <p class="sr-only" data-price-status role="status">
+            Monthly billing selected.
+          </p>
+          <div class="plans">
+            <article class="plan">
+              <h3 class="plan-label">BASIC</h3>
+              <div class="plan-price">
+                <strong data-monthly="19" data-yearly="16">$19</strong
+                ><span>/ month</span>
+              </div>
+              <p class="billing-note" data-billing-note>billed monthly</p>
+              <ul>
+                <li>1 User</li>
+                <li>5GB Storage</li>
+                <li>Basic Support</li>
+                <li>Limited API Access</li>
+                <li>Standard Analytics</li>
+              </ul>
+              <a
+                class="button subscribe secondary"
+                href="signup.html?plan=basic"
+                >Subscribe <span aria-hidden="true">→</span></a
+              >
+              <p class="plan-description">
+                A useful start for personal projects
+              </p>
+            </article>
+            <article class="plan featured">
+              <span class="popular">✧ Popular</span>
+              <h3 class="plan-label">PRO</h3>
+              <div class="plan-price">
+                <strong data-monthly="49" data-yearly="40">$49</strong
+                ><span>/ month</span>
+              </div>
+              <p class="billing-note" data-billing-note>billed monthly</p>
+              <ul>
+                <li>5 Users</li>
+                <li>50GB Storage</li>
+                <li>Priority Support</li>
+                <li>Full API Access</li>
+                <li>Advanced Analytics</li>
+              </ul>
+              <a class="button subscribe" href="signup.html?plan=pro"
+                >Subscribe <span aria-hidden="true">→</span></a
+              >
+              <p class="plan-description">More room for a growing team</p>
+            </article>
+            <article class="plan">
+              <h3 class="plan-label">ENTERPRISE</h3>
+              <div class="plan-price">
+                <strong data-monthly="99" data-yearly="82">$99</strong
+                ><span>/ month</span>
+              </div>
+              <p class="billing-note" data-billing-note>billed monthly</p>
+              <ul>
+                <li>Unlimited Users</li>
+                <li>500GB Storage</li>
+                <li>24/7 Premium Support</li>
+                <li>Custom Integrations</li>
+                <li>AI-Powered Insights</li>
+              </ul>
+              <a
+                class="button subscribe secondary"
+                href="signup.html?plan=enterprise"
+                >Subscribe <span aria-hidden="true">→</span></a
+              >
+              <p class="plan-description">
+                A shared foundation for larger projects
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="faq">
+        <div class="container section-pad">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Frequently asked questions</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-answer-0"
+                >
+                  What is acme.ai?<svg class="" aria-hidden="true">
+                    <use href="#i-chevron" />
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-answer" id="faq-answer-0" hidden>
+                Acme.ai is a fictional AI workflow product in this static design
+                preview. The page demonstrates how a team could bring data,
+                analysis, and reporting into a shared workspace.
+              </div>
+            </div>
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-answer-1"
+                >
+                  How do I get started?<svg class="" aria-hidden="true">
+                    <use href="#i-chevron" />
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-answer" id="faq-answer-1" hidden>
+                Explore the product walkthrough, compare the sample plans, or
+                try the signup form. All controls are local demonstrations; no
+                account or subscription is created.
+              </div>
+            </div>
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-answer-2"
+                >
+                  Which kinds of workflows are included?<svg
+                    class=""
+                    aria-hidden="true"
+                  >
+                    <use href="#i-chevron" />
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-answer" id="faq-answer-2" hidden>
+                The example covers organizing information, reviewing patterns,
+                asking questions, and preparing reports. The dashboard imagery
+                illustrates the interface rather than a connected analysis
+                service.
+              </div>
+            </div>
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-answer-3"
+                >
+                  Do I need experience with AI tools?<svg
+                    class=""
+                    aria-hidden="true"
+                  >
+                    <use href="#i-chevron" />
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-answer" id="faq-answer-3" hidden>
+                The sample is designed around familiar steps: choose the
+                information, describe an outcome, and review the result. The
+                guided preview introduces those steps without requiring any
+                setup.
+              </div>
+            </div>
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-answer-4"
+                >
+                  What support is available?<svg class="" aria-hidden="true">
+                    <use href="#i-chevron" />
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-answer" id="faq-answer-4" hidden>
+                You can use the local contact form to preview a support request.
+                It displays a confirmation in the browser and does not send,
+                store, or email the information you enter.
+              </div>
+            </div>
+          </div>
+          <p class="faq-support">
+            Need a little more detail?
+            <a href="#contact" data-contact>Talk to our team</a>
+          </p>
+        </div>
+      </section>
+      <section id="blog">
+        <div class="container section-pad">
+          <div class="section-heading">
+            <p class="eyebrow">Blog</p>
+            <h2>Latest Articles</h2>
+          </div>
+          <div class="blog-grid">
+            <a class="blog-card" href="introducing-acme-ai.html"
+              ><img
+                src="assets/introducing.png"
+                alt="Introducing Acme.ai dashboard announcement"
+                width="1200"
+                height="630"
+                loading="lazy"
+              />
+              <div class="blog-card-body">
+                <time datetime="2024-08-29">August 29, 2024</time>
+                <h3>Introducing Acme.ai</h3>
+                <p>
+                  A shared home for your data, your decisions, and the work that
+                  happens between them.
+                </p>
+              </div></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="cta" id="cta">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Ready to get started?</p>
+            <h2>Make room for your next good idea.</h2>
+          </div>
+          <a class="button" href="signup.html"
+            ><svg class="" aria-hidden="true"><use href="#i-blocks" /></svg>Get
+            started for free</a
+          >
+        </div>
+      </section>
+      <dialog class="demo-dialog" id="tour" aria-labelledby="tour-title">
+        <div class="dialog-header">
+          <div>
+            <h2 id="tour-title">A quick look inside acme.ai</h2>
+            <p>Local guided preview · No files are uploaded or analyzed.</p>
+          </div>
+          <button
+            type="button"
+            class="dialog-close"
+            data-close
+            aria-label="Close walkthrough"
+          >
+            ×
+          </button>
+        </div>
+        <div class="tour-screen">
+          <img
+            src="assets/dashboard.png"
+            width="1336"
+            height="800"
+            alt="Example Acme workspace"
+          />
+          <div class="tour-caption" aria-live="polite">
+            <strong data-tour-title>1. Bring your information together</strong>
+            <p data-tour-copy>
+              Choose the references that matter to your project. This sample
+              uses pre-made dashboard imagery.
+            </p>
+          </div>
+        </div>
+        <div class="tour-controls" aria-label="Walkthrough steps">
+          <button type="button" data-tour-step="0" aria-pressed="true">
+            1. Import</button
+          ><button type="button" data-tour-step="1" aria-pressed="false">
+            2. Analyze</button
+          ><button type="button" data-tour-step="2" aria-pressed="false">
+            3. Review
+          </button>
+        </div>
+      </dialog>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <a class="brand" href="index.html" aria-label="acme.ai home"
+            ><svg class="" aria-hidden="true"><use href="#i-blocks" /></svg
+            ><span>acme.ai</span></a
+          >
+          <div class="footer-links">
+            <h2>Product</h2>
+            <ul>
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="index.html#pricing">Pricing</a></li>
+              <li><a href="index.html#how-it-works">Documentation</a></li>
+              <li><a href="index.html#features">API</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h2>Company</h2>
+            <ul>
+              <li><a href="introducing-acme-ai.html">About Us</a></li>
+              <li><a href="#contact" data-contact>Careers</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="introducing-acme-ai.html">Press</a></li>
+              <li><a href="index.html#logos">Partners</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h2>Resources</h2>
+            <ul>
+              <li><a href="index.html#testimonials">Community</a></li>
+              <li><a href="#contact" data-contact>Contact</a></li>
+              <li><a href="#contact" data-contact>Support</a></li>
+              <li><a href="index.html#faq">Status</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h2>Social</h2>
+            <ul>
+              <li><a href="#contact" data-contact>Twitter</a></li>
+              <li><a href="#contact" data-contact>Instagram</a></li>
+              <li><a href="#contact" data-contact>Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Copyright © 2026 <a href="index.html">acme.ai</a> — A more
+            connected working day
+          </p>
+          <div>
+            <a href="index.html#faq">Privacy Policy</a
+            ><a href="index.html#faq">Terms of Service</a
+            ><button
+              type="button"
+              class="footer-control"
+              data-theme-toggle
+              aria-pressed="false"
+            >
+              Dark mode</button
+            ><button
+              type="button"
+              class="footer-control"
+              data-motion-toggle
+              aria-pressed="false"
+            >
+              Pause motion
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <dialog
+      class="demo-dialog contact-dialog"
+      id="contact"
+      aria-labelledby="contact-title"
+    >
+      <div class="dialog-header">
+        <div>
+          <h2 id="contact-title">How can we help?</h2>
+          <p>Local contact demonstration. No message is sent.</p>
+        </div>
+        <button
+          type="button"
+          class="dialog-close"
+          aria-label="Close contact form"
+          data-close
+        >
+          ×
+        </button>
+      </div>
+      <form data-local-form>
+        <label class="field"
+          >Email<input
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            required /></label
+        ><label class="field"
+          >Your question<textarea
+            name="message"
+            required
+            placeholder="Tell us a little about your project…"
+          ></textarea></label
+        ><button type="submit" class="button">Preview message</button>
+        <p class="form-status" role="status" hidden></p>
+      </form>
+    </dialog>
+  </body>
+</html>

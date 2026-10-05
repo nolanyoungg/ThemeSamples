@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540">
+  <rect width="900" height="540" fill="#eff1e8" />
+  <g fill="none" stroke="#c4cdbc">
+    <path
+      d="M0 350Q200 130 420 280T900 200M0 370Q200 150 420 300T900 220M0 390Q200 170 420 320T900 240M0 410Q200 190 420 340T900 260M0 430Q200 210 420 360T900 280M0 450Q200 230 420 380T900 300M0 470Q200 250 420 400T900 320M0 490Q200 270 420 420T900 340"
+    />
+  </g>
+  <path
+    d="M200 260h230V150h220v140"
+    stroke="#626be0"
+    stroke-width="3"
+    stroke-dasharray="6 8"
+    fill="none"
+  />
+  <g fill="#525ce1">
+    <rect x="177" y="237" width="46" height="46" />
+    <rect x="407" y="127" width="46" height="46" />
+    <rect x="627" y="267" width="46" height="46" />
+  </g>
+  <g fill="#f8f9f5">
+    <rect x="191" y="251" width="18" height="18" />
+    <rect x="421" y="141" width="18" height="18" />
+    <rect x="641" y="281" width="18" height="18" />
+  </g>
+</svg>

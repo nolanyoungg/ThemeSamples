@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A Chroma journal essay about team attention, thoughtful handoffs, and lighter processes."
+    />
+    <meta name="theme-color" content="#171817" />
+    <title>Make room for meaningful work — Chroma</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/base.css" />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/behavior.js" defer></script>
+    <script src="assets/scene.js" defer></script>
+  </head>
+  <body class="chroma page-journal">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="Chroma home"
+          ><span class="brand-symbol" aria-hidden="true">◯</span>Chroma<span
+            class="brand-period"
+            >®</span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="product-menu"
+          >
+            Product <span aria-hidden="true">⌄</span>
+          </button>
+          <a href="solutions.html">Solutions</a>
+          <a href="pricing.html">Pricing</a>
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="stories-menu"
+          >
+            Journal <span aria-hidden="true">⌄</span>
+          </button>
+        </nav>
+        <a class="button nav-cta" href="contact.html"
+          >Get started <span aria-hidden="true">↗</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+      <div class="mega-menu" id="product-menu" hidden>
+        <div class="category-list" aria-label="Explore product">
+          <button
+            type="button"
+            class="category active"
+            data-category="0"
+            aria-pressed="true"
+            data-heading="Plan"
+            data-description="Make the next right thing obvious."
+            data-details="Shared briefs · Clear ownership · Connected decisions"
+            data-link="platform.html"
+            data-image="assets/flow.svg"
+          >
+            Plan<span>↗</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-category="1"
+            aria-pressed="false"
+            data-heading="Build"
+            data-description="Stay in the flow, all the way through."
+            data-details="Live projects · Review cycles · Flexible workflows"
+            data-link="platform.html#build"
+            data-image="assets/flow.svg"
+          >
+            Build<span>↗</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-category="2"
+            aria-pressed="false"
+            data-heading="Release"
+            data-description="A good finish is a better beginning."
+            data-details="Release views · Team insights · A complete history"
+            data-link="solutions.html"
+            data-image="assets/flow.svg"
+          >
+            Release<span>↗</span>
+          </button>
+        </div>
+        <div class="category-preview">
+          <img src="assets/flow.svg" alt="" width="480" height="300" />
+          <div>
+            <span class="eyebrow">A closer look</span>
+            <h2 data-menu-heading>Plan</h2>
+            <p data-menu-description>Make the next right thing obvious.</p>
+            <small data-menu-details
+              >Shared briefs · Clear ownership · Connected decisions</small
+            ><a class="text-link" data-menu-link href="platform.html"
+              >Explore <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="mega-menu editorial-menu" id="stories-menu" hidden>
+        <div>
+          <span class="eyebrow">From the notebook</span>
+          <h2>Ideas for the<br />work ahead.</h2>
+          <a class="text-link" href="journal.html">Read the journal ↗</a>
+        </div>
+        <a class="editorial-card" href="journal.html"
+          ><img src="assets/flow.svg" alt="" width="480" height="300" /><span
+            class="eyebrow"
+            >Perspective · 6 min read</span
+          >
+          <h3>Make room for meaningful work</h3>
+          <p>Thoughts on a more intentional way to create.</p></a
+        >
+        <a class="editorial-card" href="platform.html"
+          ><img src="assets/flow.svg" alt="" width="480" height="300" /><span
+            class="eyebrow"
+            >Inside the product</span
+          >
+          <h3>A few thoughtful foundations</h3>
+          <p>Take a closer look at the details that make the difference.</p></a
+        >
+      </div>
+    </header>
+    <div class="nav-backdrop" hidden></div>
+    <aside
+      id="mobile-drawer"
+      class="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation"
+      hidden
+    >
+      <div class="drawer-top">
+        <a class="brand" href="index.html">◯ Chroma</a
+        ><button
+          type="button"
+          class="drawer-close"
+          aria-label="Close navigation"
+        >
+          ✕
+        </button>
+      </div>
+      <p class="eyebrow">Find your way</p>
+      <details>
+        <summary>Product</summary>
+        <div>
+          <a href="platform.html">Plan ↗</a
+          ><a href="platform.html#build">Build ↗</a
+          ><a href="solutions.html">Release ↗</a>
+        </div>
+      </details>
+      <nav aria-label="Mobile navigation">
+        <a href="platform.html">Platform</a
+        ><a href="solutions.html">Solutions</a><a href="pricing.html">Pricing</a
+        ><a href="journal.html">Journal</a>
+      </nav>
+      <a class="button" href="contact.html">Get started ↗</a>
+      <p class="drawer-note">Good ideas deserve momentum.</p>
+    </aside>
+    <main id="main">
+      <section class="page-intro wrap">
+        <p class="eyebrow">Journal / Ways of working / 6 min read</p>
+        <h1>Make room<br />for meaningful work.</h1>
+        <p class="lead">
+          A better process often begins by taking something away. Thoughts from
+          the fictional Chroma product team.
+        </p>
+      </section>
+      <div class="wrap">
+        <img
+          class="article-image"
+          src="assets/flow.svg"
+          alt="Three connected stages within concentric circles on a warm gradient"
+          width="1200"
+          height="700"
+        />
+      </div>
+      <section class="wrap article-layout">
+        <nav class="article-toc" aria-label="Article sections">
+          <p class="eyebrow">In this story</p>
+          <a href="#attention">Attention is a shared resource</a
+          ><a href="#handoffs">Design the handoffs</a
+          ><a href="#enough">Know what is enough</a>
+        </nav>
+        <article class="prose">
+          <p>
+            A productive day and a busy day can look almost identical on a
+            calendar. Both have full blocks, quick conversations, and things
+            checked off. The difference is often what happens in the spaces
+            between them.
+          </p>
+          <p>
+            Can you find the decision you need? Does the next person understand
+            why the work changed? Is there a clear answer to what matters most?
+            Small moments of clarity have an outsized effect on how a team
+            feels.
+          </p>
+          <h2 id="attention">Attention is a shared resource.</h2>
+          <p>
+            Every time someone has to reconstruct a project's context, the team
+            pays a small tax. A missing brief becomes a message. An unexplained
+            change becomes a meeting. A half-remembered decision becomes a
+            second round of the same conversation.
+          </p>
+          <p>
+            The answer is not to document everything. It is to make the
+            important things easy to find: what we are trying to accomplish,
+            what we have decided, and what is still open. A useful record is one
+            someone can understand without its author in the room.
+          </p>
+          <blockquote>
+            Clarity is not an extra deliverable. It is part of the work itself.
+          </blockquote>
+          <h2 id="handoffs">Design the handoffs.</h2>
+          <p>
+            Most teams spend more time designing individual steps than the
+            spaces between them. A brief becomes a design, a design becomes an
+            implementation, and an implementation becomes a release. Each
+            transition is a chance to lose the original intent.
+          </p>
+          <p>
+            A good handoff carries three things: the purpose, the decisions
+            already made, and the questions that remain. Keep that small package
+            close to the artifact. It should travel with the work, not wait in
+            an unrelated folder.
+          </p>
+          <h2 id="enough">Know what is enough.</h2>
+          <p>
+            Process is useful until maintaining it becomes the main activity. If
+            a status update takes longer to write than the conversation it
+            replaces, reconsider it. If a field is always empty, remove it. If a
+            ritual has lost its purpose, give it a new one or let it go.
+          </p>
+          <p>
+            The goal is a team that can make good decisions with less friction.
+            Start small. Notice where the work slows down. Improve that moment,
+            then look again. A thoughtful process grows from the actual work
+            rather than an ideal diagram.
+          </p>
+          <p>
+            And when a project is finished, leave a little time to name what you
+            learned. A good ending makes the next beginning easier.
+          </p>
+          <a class="text-link" href="solutions.html"
+            >Find a workflow for your team ↗</a
+          >
+        </article>
+      </section>
+      <section class="closing wrap">
+        <p class="eyebrow">The next chapter</p>
+        <h2>Less in the way.<br />More of what matters.</h2>
+        <p>Give your next good idea an uninterrupted path forward.</p>
+        <a class="button" href="contact.html"
+          >Find your starting point <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div class="footer-top">
+        <a href="index.html" class="brand"
+          ><span class="brand-symbol" aria-hidden="true">◯</span>Chroma</a
+        >
+        <p>Good ideas deserve momentum.</p>
+        <a class="text-link" href="contact.html">Let's begin ↗</a>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="platform.html">Platform</a
+        ><a href="solutions.html">Solutions</a><a href="pricing.html">Pricing</a
+        ><a href="journal.html">Journal</a
+        ><a href="contact.html">Get started</a>
+      </nav>
+      <div class="footer-bottom">
+        <span>© 2026 Chroma. A fictional product.</span
+        ><span>Independent design preview · Local demos only</span
+        ><button class="motion-toggle" type="button" aria-pressed="false">
+          Pause motion
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>

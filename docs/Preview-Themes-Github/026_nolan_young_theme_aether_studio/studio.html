@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore Aether’s local prompt playground, art-direction workflow, and creative collections."
+    />
+    <meta name="theme-color" content="#f8f7fc" />
+    <title>The studio — Aether</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/base.css" />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/behavior.js" defer></script>
+    <script src="assets/scene.js" defer></script>
+  </head>
+  <body class="aether page-studio">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="Aether home"
+          ><span class="brand-symbol" aria-hidden="true">✳</span>Aether<span
+            class="brand-period"
+            >®</span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="product-menu"
+          >
+            Create <span aria-hidden="true">⌄</span>
+          </button>
+          <a href="showcase.html">Showcase</a>
+          <a href="pricing.html">Pricing</a>
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="stories-menu"
+          >
+            Journal <span aria-hidden="true">⌄</span>
+          </button>
+        </nav>
+        <a class="button nav-cta" href="contact.html"
+          >Get started <span aria-hidden="true">↗</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+      <div class="mega-menu" id="product-menu" hidden>
+        <div class="category-list" aria-label="Explore create">
+          <button
+            type="button"
+            class="category active"
+            data-category="0"
+            aria-pressed="true"
+            data-heading="Imagine"
+            data-description="Turn a fleeting thought into a world worth exploring."
+            data-details="Prompt-led image creation · Art direction · Variations"
+            data-link="studio.html"
+            data-image="assets/silk-world.jpg"
+          >
+            Imagine<span>↗</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-category="1"
+            aria-pressed="false"
+            data-heading="Compose"
+            data-description="Bring your visual language into focus."
+            data-details="Reference boards · Shared collections · Creative control"
+            data-link="studio.html#compose"
+            data-image="assets/chrome-study.jpg"
+          >
+            Compose<span>↗</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-category="2"
+            aria-pressed="false"
+            data-heading="Discover"
+            data-description="A starting point for your next unexpected idea."
+            data-details="Campaigns · Product studies · Immersive worlds"
+            data-link="showcase.html"
+            data-image="assets/silk-world.jpg"
+          >
+            Discover<span>↗</span>
+          </button>
+        </div>
+        <div class="category-preview">
+          <img src="assets/silk-world.jpg" alt="" width="480" height="300" />
+          <div>
+            <span class="eyebrow">A closer look</span>
+            <h2 data-menu-heading>Imagine</h2>
+            <p data-menu-description>
+              Turn a fleeting thought into a world worth exploring.
+            </p>
+            <small data-menu-details
+              >Prompt-led image creation · Art direction · Variations</small
+            ><a class="text-link" data-menu-link href="studio.html"
+              >Explore <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="mega-menu editorial-menu" id="stories-menu" hidden>
+        <div>
+          <span class="eyebrow">From the notebook</span>
+          <h2>Ideas for the<br />work ahead.</h2>
+          <a class="text-link" href="journal.html">Read the journal ↗</a>
+        </div>
+        <a class="editorial-card" href="journal.html"
+          ><img
+            src="assets/silk-world.jpg"
+            alt=""
+            width="480"
+            height="300"
+          /><span class="eyebrow">Perspective · 6 min read</span>
+          <h3>The space between an idea and an image</h3>
+          <p>Thoughts on a more intentional way to create.</p></a
+        >
+        <a class="editorial-card" href="studio.html"
+          ><img
+            src="assets/chrome-study.jpg"
+            alt=""
+            width="480"
+            height="300"
+          /><span class="eyebrow">Inside the product</span>
+          <h3>A few thoughtful foundations</h3>
+          <p>Take a closer look at the details that make the difference.</p></a
+        >
+      </div>
+    </header>
+    <div class="nav-backdrop" hidden></div>
+    <aside
+      id="mobile-drawer"
+      class="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation"
+      hidden
+    >
+      <div class="drawer-top">
+        <a class="brand" href="index.html">✳ Aether</a
+        ><button
+          type="button"
+          class="drawer-close"
+          aria-label="Close navigation"
+        >
+          ✕
+        </button>
+      </div>
+      <p class="eyebrow">Find your way</p>
+      <details>
+        <summary>Create</summary>
+        <div>
+          <a href="studio.html">Imagine ↗</a
+          ><a href="studio.html#compose">Compose ↗</a
+          ><a href="showcase.html">Discover ↗</a>
+        </div>
+      </details>
+      <nav aria-label="Mobile navigation">
+        <a href="studio.html">The studio</a><a href="showcase.html">Showcase</a
+        ><a href="pricing.html">Pricing</a><a href="journal.html">Journal</a>
+      </nav>
+      <a class="button" href="contact.html">Get started ↗</a>
+      <p class="drawer-note">A little imagination. A whole new world.</p>
+    </aside>
+    <main id="main">
+      <section class="page-intro wrap">
+        <p class="eyebrow">A closer look / The studio</p>
+        <h1>A space to follow<br />your <em>what if.</em></h1>
+        <p class="lead">
+          Start with a thought, choose a direction, and keep refining. Our local
+          playground gives you a feel for the creative process.
+        </p>
+      </section>
+      <section class="wrap">
+        <div class="workspace-demo">
+          <form class="prompt-box" data-prompt-form>
+            <label class="eyebrow" for="creative-prompt"
+              >Your next idea starts here</label
+            >
+            <textarea
+              id="creative-prompt"
+              name="prompt"
+              placeholder="A world made of lavender silk, just after sunrise…"
+              maxlength="280"
+              required
+              aria-label="Describe your creative idea"
+            ></textarea>
+            <div class="prompt-toolbar">
+              <div class="chips" aria-label="Creative direction">
+                <button
+                  type="button"
+                  class="chip"
+                  data-prompt="A world made of lavender silk, just after sunrise"
+                  aria-pressed="true"
+                >
+                  ↗ Dream a world</button
+                ><button
+                  type="button"
+                  class="chip"
+                  data-prompt="A liquid chrome sculpture holding a violet glass sphere"
+                  aria-pressed="false"
+                >
+                  ✧ Shape an object
+                </button>
+              </div>
+              <button
+                class="send-prompt"
+                type="submit"
+                aria-label="Explore this prompt"
+              >
+                ↑
+              </button>
+            </div>
+          </form>
+          <div class="demo-result" aria-live="polite">
+            <img
+              data-result-image
+              src="assets/silk-world.jpg"
+              alt="Pre-made lavender landscape study"
+              width="1536"
+              height="1024"
+            />
+            <div>
+              <p class="eyebrow">Local concept playground</p>
+              <h3 data-result-title>Every world starts somewhere.</h3>
+              <p data-result-copy>
+                Write your own brief or choose a starting point. The demo pairs
+                your direction with one of two pre-made artworks.
+              </p>
+              <p class="form-note">No generation, uploads, or saved prompts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section wrap split" id="compose">
+        <div>
+          <p class="eyebrow">01 / Find the feeling</p>
+          <h2>Art direction,<br />in your own words.</h2>
+          <p class="lead">
+            The most useful prompt isn't the longest one. It's the one that
+            knows what it wants to feel like.
+          </p>
+          <p>
+            Begin with your subject. Give it a material, a setting, and a point
+            of view. “A silver object” becomes “a liquid silver ribbon,
+            suspended in a quiet lilac room.” That specificity makes a direction
+            worth pursuing.
+          </p>
+        </div>
+        <div class="panel">
+          <span class="number">A SMALL PROMPT RECIPE</span>
+          <h3>Subject + atmosphere<br />+ a little surprise.</h3>
+          <p>
+            <strong>Subject:</strong> A sculptural chrome loop.<br /><strong
+              >Atmosphere:</strong
+            >
+            Soft violet light, a quiet room.<br /><strong>Surprise:</strong> A
+            glass sphere suspended within.
+          </p>
+          <div class="mini-swatches" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+      </section>
+      <section class="soft-band">
+        <div class="section wrap">
+          <div class="section-heading">
+            <h2>Room for the<br />whole process.</h2>
+            <p>A few thoughtful tools, designed to stay out of your way.</p>
+          </div>
+          <div class="grid-3">
+            <article class="panel">
+              <span class="number">01 / COLLECT</span>
+              <h3>Keep a thread.</h3>
+              <p>
+                Gather visual references and draft directions into collections,
+                so the reason behind an idea stays as clear as the image itself.
+              </p>
+            </article>
+            <article class="panel">
+              <span class="number">02 / REFINE</span>
+              <h3>Change one thing.</h3>
+              <p>
+                Explore a warmer light, a different material, or a wider view.
+                Small changes help you understand which decisions are doing the
+                work.
+              </p>
+            </article>
+            <article class="panel">
+              <span class="number">03 / SHARE</span>
+              <h3>Invite a new eye.</h3>
+              <p>
+                Bring collaborators into a considered selection, with the
+                context they need to give clear, useful creative feedback.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="closing wrap">
+        <p class="eyebrow">The next chapter</p>
+        <h2>The next direction is yours.</h2>
+        <p>Explore the collection, then make space for your own ideas.</p>
+        <a class="button" href="contact.html"
+          >Find your starting point <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div class="footer-top">
+        <a href="index.html" class="brand"
+          ><span class="brand-symbol" aria-hidden="true">✳</span>Aether</a
+        >
+        <p>A little imagination. A whole new world.</p>
+        <a class="text-link" href="contact.html">Let's begin ↗</a>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="studio.html">The studio</a
+        ><a href="showcase.html">Showcase</a><a href="pricing.html">Pricing</a
+        ><a href="journal.html">Journal</a
+        ><a href="contact.html">Get started</a>
+      </nav>
+      <div class="footer-bottom">
+        <span>© 2026 Aether. A fictional product.</span
+        ><span>Independent design preview · Local demos only</span
+        ><button class="motion-toggle" type="button" aria-pressed="false">
+          Pause motion
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>

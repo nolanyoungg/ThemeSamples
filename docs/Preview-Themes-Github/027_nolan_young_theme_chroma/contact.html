@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Tell us a little about your team and the work ahead. Let’s find a rhythm that fits."
+    />
+    <meta name="theme-color" content="#171817" />
+    <title>Get started — Chroma</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/base.css" />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/behavior.js" defer></script>
+    <script src="assets/scene.js" defer></script>
+  </head>
+  <body class="chroma page-contact">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="Chroma home"
+          ><span class="brand-symbol" aria-hidden="true">◯</span>Chroma<span
+            class="brand-period"
+            >®</span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="product-menu"
+          >
+            Product <span aria-hidden="true">⌄</span>
+          </button>
+          <a href="solutions.html">Solutions</a>
+          <a href="pricing.html">Pricing</a>
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="stories-menu"
+          >
+            Journal <span aria-hidden="true">⌄</span>
+          </button>
+        </nav>
+        <a class="button nav-cta" href="contact.html"
+          >Get started <span aria-hidden="true">↗</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+      <div class="mega-menu" id="product-menu" hidden>
+        <div class="category-list" aria-label="Explore product">
+          <button
+            type="button"
+            class="category active"
+            data-category="0"
+            aria-pressed="true"
+            data-heading="Plan"
+            data-description="Make the next right thing obvious."
+            data-details="Shared briefs · Clear ownership · Connected decisions"
+            data-link="platform.html"
+            data-image="assets/flow.svg"
+          >
+            Plan<span>↗</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-category="1"
+            aria-pressed="false"
+            data-heading="Build"
+            data-description="Stay in the flow, all the way through."
+            data-details="Live projects · Review cycles · Flexible workflows"
+            data-link="platform.html#build"
+            data-image="assets/flow.svg"
+          >
+            Build<span>↗</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-category="2"
+            aria-pressed="false"
+            data-heading="Release"
+            data-description="A good finish is a better beginning."
+            data-details="Release views · Team insights · A complete history"
+            data-link="solutions.html"
+            data-image="assets/flow.svg"
+          >
+            Release<span>↗</span>
+          </button>
+        </div>
+        <div class="category-preview">
+          <img src="assets/flow.svg" alt="" width="480" height="300" />
+          <div>
+            <span class="eyebrow">A closer look</span>
+            <h2 data-menu-heading>Plan</h2>
+            <p data-menu-description>Make the next right thing obvious.</p>
+            <small data-menu-details
+              >Shared briefs · Clear ownership · Connected decisions</small
+            ><a class="text-link" data-menu-link href="platform.html"
+              >Explore <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="mega-menu editorial-menu" id="stories-menu" hidden>
+        <div>
+          <span class="eyebrow">From the notebook</span>
+          <h2>Ideas for the<br />work ahead.</h2>
+          <a class="text-link" href="journal.html">Read the journal ↗</a>
+        </div>
+        <a class="editorial-card" href="journal.html"
+          ><img src="assets/flow.svg" alt="" width="480" height="300" /><span
+            class="eyebrow"
+            >Perspective · 6 min read</span
+          >
+          <h3>Make room for meaningful work</h3>
+          <p>Thoughts on a more intentional way to create.</p></a
+        >
+        <a class="editorial-card" href="platform.html"
+          ><img src="assets/flow.svg" alt="" width="480" height="300" /><span
+            class="eyebrow"
+            >Inside the product</span
+          >
+          <h3>A few thoughtful foundations</h3>
+          <p>Take a closer look at the details that make the difference.</p></a
+        >
+      </div>
+    </header>
+    <div class="nav-backdrop" hidden></div>
+    <aside
+      id="mobile-drawer"
+      class="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation"
+      hidden
+    >
+      <div class="drawer-top">
+        <a class="brand" href="index.html">◯ Chroma</a
+        ><button
+          type="button"
+          class="drawer-close"
+          aria-label="Close navigation"
+        >
+          ✕
+        </button>
+      </div>
+      <p class="eyebrow">Find your way</p>
+      <details>
+        <summary>Product</summary>
+        <div>
+          <a href="platform.html">Plan ↗</a
+          ><a href="platform.html#build">Build ↗</a
+          ><a href="solutions.html">Release ↗</a>
+        </div>
+      </details>
+      <nav aria-label="Mobile navigation">
+        <a href="platform.html">Platform</a
+        ><a href="solutions.html">Solutions</a><a href="pricing.html">Pricing</a
+        ><a href="journal.html">Journal</a>
+      </nav>
+      <a class="button" href="contact.html">Get started ↗</a>
+      <p class="drawer-note">Good ideas deserve momentum.</p>
+    </aside>
+    <main id="main">
+      <section class="page-intro wrap">
+        <p class="eyebrow">Start a conversation</p>
+        <h1>Your next good idea<br />starts <em>here.</em></h1>
+        <p class="lead">
+          Tell us a little about your team and the work ahead. Let’s find a
+          rhythm that fits.
+        </p>
+      </section>
+      <section class="wrap section split contact-layout" style="padding-top: 0">
+        <div class="contact-aside">
+          <p class="eyebrow">A thoughtful beginning</p>
+          <h2>Tell us what<br />you have in mind.</h2>
+          <p>
+            Whether you are exploring on your own or bringing a team together,
+            the first step is understanding the work you want to do.
+          </p>
+          <dl>
+            <dt>01 / Make it yours</dt>
+            <dd>Choose a starting point that fits your project.</dd>
+            <dt>02 / Find your flow</dt>
+            <dd>Explore the tools with a guided introduction.</dd>
+            <dt>03 / Build on it</dt>
+            <dd>Keep the context, refine the process, and move forward.</dd>
+          </dl>
+          <p class="form-note">
+            This is a fictional product website. The form is a local
+            demonstration and does not send or store your details.
+          </p>
+        </div>
+        <form class="panel" data-local-form>
+          <p class="eyebrow">Local demonstration</p>
+          <div class="form-grid">
+            <label class="form-field"
+              >Your name<input
+                name="name"
+                autocomplete="name"
+                placeholder="Alex Morgan"
+                required /></label
+            ><label class="form-field"
+              >Email address<input
+                type="email"
+                name="email"
+                autocomplete="email"
+                placeholder="alex@example.com"
+                required /></label
+            ><label class="form-field full"
+              >Your starting point<select name="plan">
+                <option value="independent">Independent</option>
+                <option value="team">Team</option>
+                <option value="organization">Organization</option>
+                <option value="exploring">Just exploring</option>
+              </select></label
+            ><label class="form-field full"
+              >What would you like to work on?<textarea
+                name="message"
+                placeholder="A little context goes a long way…"
+                required
+              ></textarea>
+            </label>
+          </div>
+          <p class="form-note">Demo only. Nothing leaves this page.</p>
+          <button class="button accent" type="submit">
+            Preview request <span aria-hidden="true">↗</span>
+          </button>
+          <p class="form-feedback" role="status" hidden></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div class="footer-top">
+        <a href="index.html" class="brand"
+          ><span class="brand-symbol" aria-hidden="true">◯</span>Chroma</a
+        >
+        <p>Good ideas deserve momentum.</p>
+        <a class="text-link" href="contact.html">Let's begin ↗</a>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="platform.html">Platform</a
+        ><a href="solutions.html">Solutions</a><a href="pricing.html">Pricing</a
+        ><a href="journal.html">Journal</a
+        ><a href="contact.html">Get started</a>
+      </nav>
+      <div class="footer-bottom">
+        <span>© 2026 Chroma. A fictional product.</span
+        ><span>Independent design preview · Local demos only</span
+        ><button class="motion-toggle" type="button" aria-pressed="false">
+          Pause motion
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>

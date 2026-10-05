@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A thoughtful AI agent platform with an animated alpine workspace, task playback, and developer examples."
+    />
+    <meta name="theme-color" content="#f7f7f2" />
+    <title>A place for useful work — WAYPOINT</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/base.css" />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/behavior.js" defer></script>
+    <script src="assets/scene.js" defer></script>
+  </head>
+  <body class="waypoint page-index">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="WAYPOINT home"
+          ><span class="brand-symbol" aria-hidden="true">▧</span>WAYPOINT<span
+            class="brand-period"
+            >®</span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="product-menu"
+          >
+            Platform <span aria-hidden="true">⌄</span>
+          </button>
+          <a href="developers.html">Developers</a>
+          <a href="pricing.html">Pricing</a>
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="stories-menu"
+          >
+            Field notes <span aria-hidden="true">⌄</span>
+          </button>
+        </nav>
+        <a class="button nav-cta" href="contact.html"
+          >Start building <span aria-hidden="true">↗</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+      <div class="mega-menu" id="product-menu" hidden>
+        <div class="category-list" aria-label="Explore platform">
+          <button
+            type="button"
+            class="category active"
+            data-category="0"
+            aria-pressed="true"
+            data-heading="Workspace"
+            data-description="Give every agent a place to think."
+            data-details="Persistent files · Scoped context · Resumable tasks"
+            data-link="platform.html"
+            data-image="assets/alpine-workspace.jpg"
+          >
+            Workspace<span>↗</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-category="1"
+            aria-pressed="false"
+            data-heading="Execution"
+            data-description="Follow the work from intent to outcome."
+            data-details="Task runs · Traces · Clear checkpoints"
+            data-link="platform.html#execution"
+            data-image="assets/topology.svg"
+          >
+            Execution<span>↗</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-category="2"
+            aria-pressed="false"
+            data-heading="Controls"
+            data-description="Keep the important decisions yours."
+            data-details="Tool permissions · Review gates · Run budgets"
+            data-link="platform.html#controls"
+            data-image="assets/alpine-workspace.jpg"
+          >
+            Controls<span>↗</span>
+          </button>
+        </div>
+        <div class="category-preview">
+          <img
+            src="assets/alpine-workspace.jpg"
+            alt=""
+            width="480"
+            height="300"
+          />
+          <div>
+            <span class="eyebrow">A closer look</span>
+            <h2 data-menu-heading>Workspace</h2>
+            <p data-menu-description>Give every agent a place to think.</p>
+            <small data-menu-details
+              >Persistent files · Scoped context · Resumable tasks</small
+            ><a class="text-link" data-menu-link href="platform.html"
+              >Explore <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="mega-menu editorial-menu" id="stories-menu" hidden>
+        <div>
+          <span class="eyebrow">From the notebook</span>
+          <h2>Ideas for the<br />work ahead.</h2>
+          <a class="text-link" href="field-notes.html">Read the journal ↗</a>
+        </div>
+        <a class="editorial-card" href="field-notes.html"
+          ><img
+            src="assets/alpine-workspace.jpg"
+            alt=""
+            width="480"
+            height="300"
+          /><span class="eyebrow">Perspective · 6 min read</span>
+          <h3>The case for a persistent workspace</h3>
+          <p>Thoughts on a more intentional way to create.</p></a
+        >
+        <a class="editorial-card" href="platform.html"
+          ><img
+            src="assets/topology.svg"
+            alt=""
+            width="480"
+            height="300"
+          /><span class="eyebrow">Inside the product</span>
+          <h3>A few thoughtful foundations</h3>
+          <p>Take a closer look at the details that make the difference.</p></a
+        >
+      </div>
+    </header>
+    <div class="nav-backdrop" hidden></div>
+    <aside
+      id="mobile-drawer"
+      class="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation"
+      hidden
+    >
+      <div class="drawer-top">
+        <a class="brand" href="index.html">▧ WAYPOINT</a
+        ><button
+          type="button"
+          class="drawer-close"
+          aria-label="Close navigation"
+        >
+          ✕
+        </button>
+      </div>
+      <p class="eyebrow">Find your way</p>
+      <details>
+        <summary>Platform</summary>
+        <div>
+          <a href="platform.html">Workspace ↗</a
+          ><a href="platform.html#execution">Execution ↗</a
+          ><a href="platform.html#controls">Controls ↗</a>
+        </div>
+      </details>
+      <nav aria-label="Mobile navigation">
+        <a href="platform.html">Platform</a
+        ><a href="developers.html">Developers</a
+        ><a href="pricing.html">Pricing</a
+        ><a href="field-notes.html">Field notes</a>
+      </nav>
+      <a class="button" href="contact.html">Start building ↗</a>
+      <p class="drawer-note">A place for useful work to happen.</p>
+    </aside>
+    <main id="main">
+      <section class="waypoint-hero">
+        <a class="announcement" href="platform.html"
+          ><span>NEW</span>Persistent context. A better place to begin. ↗</a
+        >
+        <h1>For agents with<br />somewhere to <em>go.</em></h1>
+        <p class="lead">
+          Tools, context, and a place to do the work.<br />From your first
+          instruction to a useful outcome.
+        </p>
+        <div class="actions">
+          <a href="#playground" class="button secondary">See it in action ↓</a
+          ><a href="developers.html" class="button accent">Start building ↗</a>
+        </div>
+      </section>
+      <section
+        class="landscape wrap"
+        id="playground"
+        aria-label="Interactive alpine agent workspace"
+      >
+        <img
+          src="assets/alpine-workspace.jpg"
+          alt="A quiet alpine lake surrounded by forests, mountains, and a small observatory"
+          width="1536"
+          height="1024"
+        /><canvas data-landscape aria-hidden="true"></canvas>
+        <div class="run-console">
+          <p class="eyebrow">
+            <span>Waypoint / Playground</span><span>LOCAL DEMO</span>
+          </p>
+          <h3 data-task-description>
+            Research a new idea. Turn the useful findings into a clear,
+            considered brief.
+          </h3>
+          <div class="run-controls">
+            <select aria-label="Choose an agent task" data-task-select>
+              <option value="research">↗ Research an idea</option>
+              <option value="release">↗ Prepare a release</option>
+              <option value="operations">↗ Review operations</option></select
+            ><button type="button" class="button accent" data-run>
+              Run task <span aria-hidden="true">↑</span>
+            </button>
+          </div>
+          <div class="run-track" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <p class="run-status" role="status" data-run-status>
+            Choose a task. Give your agent a place to start.
+          </p>
+          <div class="run-output" data-run-output hidden></div>
+        </div>
+        <div class="landscape-caption">
+          <span>FIELD STATION 001 / A PLACE TO THINK</span
+          ><span>Move your pointer across the landscape · Local playback</span>
+        </div>
+      </section>
+      <div class="wrap foundation-strip">
+        <span><b>01 /</b> CONTEXT THAT STAYS</span
+        ><span><b>02 /</b> WORK YOU CAN FOLLOW</span
+        ><span><b>03 /</b> CONTROL WHERE IT COUNTS</span>
+      </div>
+      <section class="logos wrap">
+        <p class="eyebrow">Imagined for teams building something useful</p>
+        <div class="logos-row" aria-label="Fictional teams">
+          <span>Evergreen</span><span>morrow labs</span><span>FIELDWORK</span
+          ><span>Northstar ↗</span><span>Common</span>
+        </div>
+      </section>
+      <section class="wrap section rule">
+        <div class="section-heading">
+          <h2>A little structure.<br />A lot more <em>possibility.</em></h2>
+          <p>
+            Useful agents need more than an instruction. They need a place to
+            keep context, do the work, and ask at the right moment.
+          </p>
+        </div>
+        <div class="grid-3">
+          <article class="principle-card">
+            <span class="pixel-icon">▧</span>
+            <h3>A workspace, not a window.</h3>
+            <p>
+              Keep files, references, and decisions together. The next task can
+              begin with what the last one learned.
+            </p>
+            <a class="text-link" href="platform.html">Explore context ↗</a>
+          </article>
+          <article class="principle-card">
+            <span class="pixel-icon">⌁</span>
+            <h3>A path you can follow.</h3>
+            <p>
+              See the plan, the tools, and the checkpoints. Understand how a
+              result came together, step by step.
+            </p>
+            <a class="text-link" href="platform.html#execution"
+              >Explore execution ↗</a
+            >
+          </article>
+          <article class="principle-card">
+            <span class="pixel-icon">⊞</span>
+            <h3>A hand on the controls.</h3>
+            <p>
+              Set the boundaries before work begins. Keep important writes and
+              external actions behind a review.
+            </p>
+            <a class="text-link" href="platform.html#controls"
+              >Explore controls ↗</a
+            >
+          </article>
+        </div>
+      </section>
+      <section class="platform-band">
+        <div class="wrap section split">
+          <div>
+            <p class="eyebrow">01 / A working memory</p>
+            <h2>Pick up where<br />the work <em>left off.</em></h2>
+            <p class="lead">
+              A useful workspace remembers more than a conversation.
+            </p>
+            <p>
+              Let the project carry its context: the brief, the evidence, the
+              open questions. Give every new run a considered starting point.
+            </p>
+            <a class="text-link" href="platform.html">Inside a workspace ↗</a>
+          </div>
+          <div class="workspace-window">
+            <div class="workspace-bar">
+              <span>▧ research-workspace</span><span>CONTEXT READY</span>
+            </div>
+            <div class="workspace-files">
+              <div>▤ brief.md <span>Updated just now</span></div>
+              <div>▤ findings.md <span>12 references</span></div>
+              <div>▧ sources/ <span>Read only</span></div>
+              <div>▤ decisions.md <span>3 checkpoints</span></div>
+            </div>
+            <div class="workspace-note">
+              ✓ Context stays with the work. Resume from the last useful point.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wrap section split">
+        <div>
+          <p class="eyebrow">02 / A small, clear beginning</p>
+          <h2>Good primitives.<br /><em>Room to build.</em></h2>
+          <p>
+            Define a workspace. Give it context. Set the permissions. The rest
+            of the experience grows from a few understandable pieces.
+          </p>
+          <a class="text-link" href="developers.html"
+            >Explore the developer guide ↗</a
+          >
+        </div>
+        <div class="sdk-window">
+          <div class="sdk-top">
+            <div class="sdk-tabs" aria-label="Example language">
+              <button
+                type="button"
+                data-language="typescript"
+                aria-pressed="true"
+              >
+                TypeScript</button
+              ><button
+                type="button"
+                data-language="python"
+                aria-pressed="false"
+              >
+                Python
+              </button>
+            </div>
+            <button class="copy-code" type="button" data-copy>
+              Copy example
+            </button>
+          </div>
+          <pre><code data-code>const workspace = await waypoint.workspace({
+  name: "a-good-start",
+  context: ["brief.md", "references/"],
+});
+
+const run = await workspace.run({
+  task: "Turn the research into a clear brief.",
+  approval: "before_write",
+});</code></pre>
+          <div class="sdk-foot" data-copy-status role="status">
+            Illustrative SDK · Not an installable package
+          </div>
+        </div>
+      </section>
+      <section class="wrap section rule">
+        <div class="section-heading">
+          <h2>Notes from<br />the <em>field.</em></h2>
+          <p>
+            Ideas about persistent context, useful autonomy, and the work of
+            building better tools.
+          </p>
+        </div>
+        <a class="reading-card" href="field-notes.html"
+          ><img
+            src="assets/alpine-workspace.jpg"
+            alt="An alpine research observatory above a lake"
+            width="1536"
+            height="1024"
+            loading="lazy"
+          />
+          <div>
+            <p class="eyebrow">Field note 001 / Engineering</p>
+            <h3>The case for a persistent workspace.</h3>
+            <p>
+              Why useful agents need a place to keep their work, not just a
+              longer conversation.
+            </p>
+            <span class="text-link">Read the field note ↗</span>
+          </div></a
+        >
+      </section>
+      <section class="closing wrap">
+        <p class="eyebrow">The next chapter</p>
+        <h2>Give your agents<br />a good <em>starting point.</em></h2>
+        <p>
+          A little context. A few clear boundaries. A place to do something
+          useful.
+        </p>
+        <a class="button" href="contact.html"
+          >Start exploring <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div class="footer-top">
+        <a href="index.html" class="brand"
+          ><span class="brand-symbol" aria-hidden="true">▧</span>WAYPOINT</a
+        >
+        <p>A place for useful work to happen.</p>
+        <a class="text-link" href="contact.html">Let's begin ↗</a>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="platform.html">Platform</a
+        ><a href="developers.html">Developers</a
+        ><a href="pricing.html">Pricing</a
+        ><a href="field-notes.html">Field notes</a
+        ><a href="contact.html">Start building</a>
+      </nav>
+      <div class="footer-bottom">
+        <span>© 2026 WAYPOINT. A fictional product.</span
+        ><span>Independent design preview · Local demos only</span
+        ><button class="motion-toggle" type="button" aria-pressed="false">
+          Pause motion
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1520 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="NolanCodes — an AI coding platform design sample with interactive workflows, code review, integrations, and flexible plans."
+    />
+    <meta name="theme-color" content="#09090b" />
+    <title>NolanCodes</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/geist-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <svg class="sr-only" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <symbol id="brand-mark" viewBox="0 0 32 32">
+          <g fill="currentColor">
+            <ellipse cx="16" cy="5.5" rx="1.65" ry="5" />
+            <ellipse
+              cx="16"
+              cy="5.5"
+              rx="1.65"
+              ry="5"
+              transform="rotate(30 16 16)"
+            />
+            <ellipse
+              cx="16"
+              cy="5.5"
+              rx="1.65"
+              ry="5"
+              transform="rotate(60 16 16)"
+            />
+            <ellipse
+              cx="16"
+              cy="5.5"
+              rx="1.65"
+              ry="5"
+              transform="rotate(90 16 16)"
+            />
+            <ellipse
+              cx="16"
+              cy="5.5"
+              rx="1.65"
+              ry="5"
+              transform="rotate(120 16 16)"
+            />
+            <ellipse
+              cx="16"
+              cy="5.5"
+              rx="1.65"
+              ry="5"
+              transform="rotate(150 16 16)"
+            />
+            <ellipse
+              cx="16"
+              cy="5.5"
+              rx="1.65"
+              ry="5"
+              transform="rotate(180 16 16)"
+            />
+            <ellipse
+              cx="16"
+              cy="5.5"
+              rx="1.65"
+              ry="5"
+              transform="rotate(210 16 16)"
+            />
+            <ellipse
+              cx="16"
+              cy="5.5"
+              rx="1.65"
+              ry="5"
+              transform="rotate(240 16 16)"
+            />
+            <ellipse
+              cx="16"
+              cy="5.5"
+              rx="1.65"
+              ry="5"
+              transform="rotate(270 16 16)"
+            />
+            <ellipse
+              cx="16"
+              cy="5.5"
+              rx="1.65"
+              ry="5"
+              transform="rotate(300 16 16)"
+            />
+            <ellipse
+              cx="16"
+              cy="5.5"
+              rx="1.65"
+              ry="5"
+              transform="rotate(330 16 16)"
+            />
+          </g>
+        </symbol>
+        <symbol id="layers-icon" viewBox="0 0 24 24">
+          <path
+            d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="chevron-icon" viewBox="0 0 24 24">
+          <path
+            d="m6 9 6 6 6-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="spark-icon" viewBox="0 0 24 24">
+          <path
+            d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+        </symbol>
+        <symbol id="code-icon" viewBox="0 0 24 24">
+          <path
+            d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </symbol>
+      </defs>
+    </svg>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="NolanCodes home"
+          ><svg class="brand-mark" aria-hidden="true">
+            <use href="#brand-mark" /></svg
+          ><span>NolanCodes</span></a
+        >
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <button
+            type="button"
+            class="product-trigger"
+            aria-expanded="false"
+            aria-controls="product-menu"
+          >
+            Products
+            <svg class="chevron" aria-hidden="true">
+              <use href="#chevron-icon" />
+            </svg>
+          </button>
+          <a href="#features">features</a><a href="#pricing">pricing</a
+          ><a href="#connect">Docs</a><a href="#company">Company</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            type="button"
+            class="theme-toggle"
+            aria-label="Toggle theme"
+            aria-pressed="false"
+          >
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M20.7 13.1A8.8 8.8 0 0 1 10.9 3.3 9 9 0 1 0 20.7 13.1Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              /></svg
+            ><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path
+                d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+            </svg>
+          </button>
+          <button type="button" class="small-button header-cta" data-start>
+            Get Started
+          </button>
+          <button
+            type="button"
+            class="menu-toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="bars-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4 7h16M4 17h16"
+                stroke="currentColor"
+                stroke-width="2"
+              /></svg
+            ><svg class="close-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="m5 5 14 14M5 19 19 5"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="product-menu" id="product-menu" hidden>
+        <div class="product-grid">
+          <a class="product-card" href="#workflow"
+            ><span class="product-icon">‹/›</span>
+            <h3>Code Generation</h3>
+            <p>AI-powered code generation</p>
+            <img
+              src="assets/integration-preview.png"
+              width="367"
+              height="280"
+              alt="Code Generation integration preview"
+          /></a>
+          <a class="product-card" href="#review"
+            ><span class="product-icon">‹/›</span>
+            <h3>Code Review</h3>
+            <p>Automated code review</p>
+            <img
+              src="assets/integration-preview.png"
+              width="367"
+              height="280"
+              alt="Code Review integration preview"
+          /></a>
+          <a class="product-card" href="#integrations"
+            ><span class="product-icon">‹/›</span>
+            <h3>Code Refactoring</h3>
+            <p>Smart code refactoring</p>
+            <img
+              src="assets/integration-preview.png"
+              width="367"
+              height="280"
+              alt="Code Refactoring integration preview"
+          /></a>
+        </div>
+        <p class="menu-contact">
+          Have a project in mind?
+          <a href="#contact" data-contact>Let’s talk →</a>
+        </p>
+      </div>
+    </header>
+
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation"
+      hidden
+    >
+      <nav class="mobile-links" aria-label="Mobile navigation">
+        <button
+          type="button"
+          class="mobile-products"
+          aria-expanded="false"
+          aria-controls="mobile-product-list"
+        >
+          Products
+          <svg class="chevron" aria-hidden="true">
+            <use href="#chevron-icon" />
+          </svg>
+        </button>
+        <div class="mobile-product-list" id="mobile-product-list" hidden>
+          <a class="product-card" href="#workflow"
+            ><h3>Code Generation</h3>
+            <p>AI-powered code generation</p></a
+          >
+          <a class="product-card" href="#review"
+            ><h3>Code Review</h3>
+            <p>Automated code review</p></a
+          >
+          <a class="product-card" href="#integrations"
+            ><h3>Code Refactoring</h3>
+            <p>Smart code refactoring</p></a
+          >
+        </div>
+        <a href="#features">Features</a><a href="#pricing">Pricing</a
+        ><a href="#connect">Docs</a><a href="#company">Company</a>
+      </nav>
+      <div class="mobile-menu-bottom">
+        <button type="button" class="small-button" data-start>
+          Get Started
+        </button>
+        <p>
+          Have a project in mind?
+          <a href="#contact" data-contact>Let’s talk →</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="page-frame">
+      <main id="main">
+        <section class="hero" id="hero">
+          <div class="hero-content">
+            <div class="badge">
+              <svg aria-hidden="true"><use href="#layers-icon" /></svg
+              >Introducing intelligent code generation
+            </div>
+            <h1>Ship production code 10x faster with AI</h1>
+            <p>
+              Your AI development partner builds, checks, and refines code. Turn
+              ideas into finished features in minutes.
+            </p>
+            <a class="glow-button" href="#pricing">Start for free</a>
+          </div>
+        </section>
+
+        <section
+          class="showcase cross-corners"
+          id="demo"
+          aria-label="Product showcase"
+        >
+          <div
+            class="demo-tabs"
+            role="tablist"
+            aria-label="Explore capabilities"
+          >
+            <button
+              class="demo-tab"
+              id="tab-generate"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="demo-panel"
+              data-demo="0"
+            >
+              Code Generation
+            </button>
+            <button
+              class="demo-tab"
+              id="tab-review"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="demo-panel"
+              data-demo="1"
+              tabindex="-1"
+            >
+              Smart Review
+            </button>
+            <button
+              class="demo-tab"
+              id="tab-test"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="demo-panel"
+              data-demo="2"
+              tabindex="-1"
+            >
+              Auto Testing
+            </button>
+            <button
+              class="demo-tab"
+              id="tab-deploy"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="demo-panel"
+              data-demo="3"
+              tabindex="-1"
+            >
+              Deploy Ready
+            </button>
+          </div>
+          <div
+            class="demo-image-wrap"
+            id="demo-panel"
+            role="tabpanel"
+            aria-labelledby="tab-generate"
+          >
+            <img
+              class="demo-image"
+              src="assets/code-generation.jpg"
+              alt="Code Generation"
+              width="2070"
+              height="1380"
+              fetchpriority="high"
+            />
+          </div>
+        </section>
+
+        <section class="logo-band" id="company" aria-label="Company showcase">
+          <div class="logo-title">
+            <p>Trusted by <span>fast-growing</span> startups</p>
+          </div>
+          <div class="company-logos" aria-label="Technology company wordmarks">
+            <div>
+              <img src="assets/logo-openai.svg" alt="Openai" loading="lazy" />
+            </div>
+            <div>
+              <img src="assets/logo-retool.svg" alt="Retool" loading="lazy" />
+            </div>
+            <div>
+              <img src="assets/logo-stripe.svg" alt="Stripe" loading="lazy" />
+            </div>
+            <div>
+              <img src="assets/logo-wise.svg" alt="Wise" loading="lazy" />
+            </div>
+            <div>
+              <img src="assets/logo-loom.svg" alt="Loom" loading="lazy" />
+            </div>
+            <div>
+              <img src="assets/logo-medium.svg" alt="Medium" loading="lazy" />
+            </div>
+            <div>
+              <img
+                src="assets/logo-cash-app.svg"
+                alt="Cash App"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <img src="assets/logo-linear.svg" alt="Linear" loading="lazy" />
+            </div>
+          </div>
+        </section>
+
+        <section id="workflow">
+          <div class="section-heading">
+            <div class="badge">
+              <svg aria-hidden="true"><use href="#layers-icon" /></svg>Scale
+            </div>
+            <h2>
+              Your AI partner for
+              <span class="gradient-text">every commit</span>
+            </h2>
+            <p>
+              NolanCodes handles repetitive work, modernizes old code, and
+              checks each change while you concentrate on the bigger picture.
+            </p>
+          </div>
+          <div class="feature-layout">
+            <div class="sticky-copy">
+              <h3>AI joins your workflow in moments</h3>
+              <p>
+                Open a GitHub project and put an assistant to work. Inspect
+                proposed improvements, compare the changes, and decide what
+                belongs in your codebase.
+              </p>
+              <a class="learn-button" href="#connect"
+                >Learn More <span aria-hidden="true">›</span></a
+              >
+            </div>
+            <div class="feature-column">
+              <article class="feature-item">
+                <div class="demo-stage">
+                  <div class="terminal reveal" data-terminal>
+                    <div class="terminal-bar">
+                      <span class="window-dots" aria-hidden="true"
+                        ><i></i><i></i><i></i
+                      ></span>
+                    </div>
+                    <div class="terminal-body">
+                      <div class="command">
+                        <span>$</span>npx nolancodes clone repo
+                      </div>
+                      <div class="terminal-line" style="--line: 1">
+                        Opening repository...
+                      </div>
+                      <div class="terminal-line" style="--line: 2">
+                        Receiving objects: <strong>100%</strong> (1234/1234),
+                        done.
+                      </div>
+                      <div class="terminal-line" style="--line: 3">
+                        Reading project context...
+                      </div>
+                      <div class="terminal-line" style="--line: 4">
+                        Preparing coding assistant...
+                      </div>
+                      <div class="terminal-line" style="--line: 5">
+                        ✓ Your workspace is ready
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-caption">
+                  <h4>
+                    <svg aria-hidden="true"><use href="#code-icon" /></svg>A
+                    fresh workspace in one step
+                  </h4>
+                  <p>
+                    Bring an existing repository into your workspace. The
+                    assistant maps its structure and finds useful places to
+                    begin.
+                  </p>
+                </div>
+              </article>
+              <article class="feature-item" id="review">
+                <div class="demo-stage code-stage">
+                  <div class="terminal code-window reveal">
+                    <div class="terminal-bar">
+                      <span>utils.ts</span><span aria-hidden="true">↔</span>
+                    </div>
+                    <pre
+                      aria-label="Illustrative code review"
+                    ><code>import { useState, useEffect } from 'react';
+import { cn } from '@/lib/utils';
+
+export function useCounter() {
+<span class="removed" data-old-line>- const [count, setCount] = useState(0);</span><span class="removed" data-old-line>- useEffect(() =&gt; console.log(count), [count]);</span><span class="added">+ const [count, setCount] = useState(0);</span><span class="added">+</span><span class="added">+ useEffect(() =&gt; {</span><span class="added">+   console.log('Updated count:', count);</span><span class="added">+ }, [count]);</span>
+  return { count, setCount };
+}</code></pre>
+                    <button class="apply-button" type="button" data-apply>
+                      Apply suggestion
+                    </button>
+                  </div>
+                </div>
+                <div class="feature-caption">
+                  <h4>
+                    <svg aria-hidden="true"><use href="#spark-icon" /></svg
+                    >Understand the change before it lands
+                  </h4>
+                  <p>
+                    See a readable diff with the proposed improvement. This
+                    local example lets you apply and reset a suggested edit.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="integrations">
+          <div class="hash-strip" aria-hidden="true"></div>
+          <div class="feature-layout">
+            <div class="sticky-copy">
+              <h3>Connect your tools. Work with agents.</h3>
+              <p>
+                Give your assistant the right context with connected tools.
+                Coordinate specialized agents to tackle larger projects in
+                manageable pieces.
+              </p>
+              <a class="learn-button" href="#connect"
+                >Learn More <span aria-hidden="true">›</span></a
+              >
+            </div>
+            <div class="feature-column">
+              <article class="feature-item">
+                <div class="demo-stage">
+                  <div class="integration-ui reveal">
+                    <div class="prompt-mini">
+                      <p>Plan, search</p>
+                      <div class="prompt-tools">
+                        <button
+                          type="button"
+                          data-tool-note="Add a project reference to give your agent more context."
+                          aria-label="Add context"
+                        >
+                          ＋</button
+                        ><button
+                          type="button"
+                          data-tool-note="Web access is an illustrative connection in this static preview."
+                          aria-label="Web tools"
+                        >
+                          ◎</button
+                        ><button
+                          type="button"
+                          class="sources-toggle"
+                          aria-expanded="false"
+                          aria-controls="source-menu-main"
+                        >
+                          ☷ Sources</button
+                        ><button
+                          type="button"
+                          class="send-icon"
+                          data-tool-note="This is a local interface demo. No prompt is sent to an AI service."
+                          aria-label="Run example"
+                        >
+                          ↑
+                        </button>
+                      </div>
+                    </div>
+                    <div class="source-popover" id="source-menu-main" hidden>
+                      <span class="source-search"
+                        >⌕ &nbsp; Search for servers</span
+                      >
+                      <div class="source-list">
+                        <button
+                          type="button"
+                          data-source="Figma"
+                          aria-pressed="false"
+                        >
+                          <strong>♧</strong>Figma <span>Install</span></button
+                        ><button
+                          type="button"
+                          data-source="Shadcn UI"
+                          aria-pressed="false"
+                        >
+                          <strong>╱</strong>Shadcn UI
+                          <span>Install</span></button
+                        ><button
+                          type="button"
+                          data-source="GitHub"
+                          aria-pressed="false"
+                        >
+                          <strong>◉</strong>GitHub <span>Install</span>
+                        </button>
+                      </div>
+                      <p class="source-feedback" role="status" hidden></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-caption">
+                  <h4>
+                    <svg aria-hidden="true"><use href="#layers-icon" /></svg>The
+                    right connection, right where you work
+                  </h4>
+                  <p>
+                    Browse a compact set of example integrations. Select a tool
+                    to preview its connected state without creating external
+                    access.
+                  </p>
+                </div>
+              </article>
+              <article class="feature-item">
+                <div class="demo-stage agents-stage">
+                  <div class="agent-panel reveal">
+                    <div class="agent-row">
+                      <span class="agent-orb">✧</span>
+                      <div>
+                        <h4>Planning agent</h4>
+                        <p>Mapping the implementation steps</p>
+                      </div>
+                      <span class="tokens">1.2k tokens</span
+                      ><i class="agent-progress"></i>
+                    </div>
+                    <div class="agent-row">
+                      <span class="agent-orb">⌘</span>
+                      <div>
+                        <h4>Development agent</h4>
+                        <p>Building the new components</p>
+                      </div>
+                      <span class="tokens">3.8k tokens</span
+                      ><i class="agent-progress" style="--delay: -1.4s"></i>
+                    </div>
+                    <div class="agent-row">
+                      <span class="agent-orb">✓</span>
+                      <div>
+                        <h4>Review agent</h4>
+                        <p>Checking the proposed changes</p>
+                      </div>
+                      <span class="tokens">2.4k tokens</span
+                      ><i class="agent-progress" style="--delay: -2.8s"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-caption">
+                  <h4>
+                    <svg aria-hidden="true"><use href="#spark-icon" /></svg>A
+                    coordinated team of assistants
+                  </h4>
+                  <p>
+                    Separate planning, implementation, and review into focused
+                    roles. Follow the progress of each part in a shared view.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="features">
+          <div class="section-heading">
+            <div class="badge">
+              <svg aria-hidden="true"><use href="#layers-icon" /></svg>Scale
+            </div>
+            <h2>
+              Stop writing boilerplate.<span class="gradient-text"
+                >Start building features.</span
+              >
+            </h2>
+            <p>
+              Keep repetitive tasks moving in the background. Give your team
+              more time to design, solve difficult problems, and finish useful
+              work.
+            </p>
+          </div>
+          <div class="hash-strip" aria-hidden="true"></div>
+          <div class="feature-layout">
+            <div class="sticky-copy">
+              <h3>A foundation for ambitious engineering teams</h3>
+              <p>
+                Build a focused personal workflow or connect a growing team.
+                Keep your tools, context, and next steps in one clear working
+                environment.
+              </p>
+              <a class="learn-button" href="#pricing"
+                >Learn More <span aria-hidden="true">›</span></a
+              >
+            </div>
+            <div class="feature-column">
+              <article class="feature-item">
+                <div
+                  class="demo-stage network-stage"
+                  aria-label="Connected developer tools"
+                >
+                  <div class="network-hub" aria-hidden="true">▲</div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 0deg; --delay: -0s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 16.3636deg; --delay: -0.43s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 32.7273deg; --delay: -0.86s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 49.0909deg; --delay: -1.29s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 65.4545deg; --delay: -1.72s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 81.8182deg; --delay: -2.15s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 98.1818deg; --delay: -2.58s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 114.5455deg; --delay: -3.01s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 130.9091deg; --delay: -3.44s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 147.2727deg; --delay: -3.87s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 163.6364deg; --delay: -4.3s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 180deg; --delay: -4.73s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 196.3636deg; --delay: -5.16s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 212.7273deg; --delay: -5.59s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 229.0909deg; --delay: -6.02s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 245.4545deg; --delay: -6.45s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 261.8182deg; --delay: -6.88s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 278.1818deg; --delay: -7.31s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 294.5455deg; --delay: -7.74s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 310.9091deg; --delay: -8.17s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 327.2727deg; --delay: -8.6s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                  <div
+                    class="network-ray"
+                    style="--angle: 343.6364deg; --delay: -9.03s"
+                    aria-hidden="true"
+                  >
+                    <span class="network-node"><span>▲</span></span>
+                  </div>
+                </div>
+                <div class="feature-caption">
+                  <h4>
+                    <svg aria-hidden="true"><use href="#layers-icon" /></svg
+                    >Make your existing tools work together
+                  </h4>
+                  <p>
+                    Connect the services your team already understands. Keep
+                    important project knowledge close to the code it helps you
+                    build.
+                  </p>
+                </div>
+              </article>
+              <article class="feature-item">
+                <div class="demo-stage map-stage">
+                  <img
+                    src="assets/developer-map.svg"
+                    width="850"
+                    height="425"
+                    alt="Dotted map of worldwide developer locations"
+                    loading="lazy"
+                  /><span class="map-point p1"></span
+                  ><span class="map-point p2"></span
+                  ><span class="map-point p3"></span>
+                </div>
+                <div class="feature-caption">
+                  <h4>
+                    <svg aria-hidden="true"><use href="#spark-icon" /></svg
+                    >Designed for a worldwide developer community
+                  </h4>
+                  <p>
+                    Work across time zones with a consistent shared workflow.
+                    Bring the next person up to speed with context they can
+                    inspect.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="connect">
+          <div class="section-heading">
+            <div class="badge">
+              <svg aria-hidden="true"><use href="#layers-icon" /></svg>Scale
+            </div>
+            <h2>
+              Connect. Build.<br /><span class="gradient-text"
+                >Deploy. Repeat.</span
+              >
+            </h2>
+            <p>Bring your team together with connected development tools.</p>
+          </div>
+          <div class="connect-layout">
+            <div class="connect-visual">
+              <div class="integration-ui">
+                <div class="prompt-mini">
+                  <p data-step-prompt>Plan, search</p>
+                  <div class="prompt-tools">
+                    <span>＋</span><span>◎</span
+                    ><button
+                      class="sources-toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="source-menu-steps"
+                    >
+                      ☷ Sources</button
+                    ><span class="send-icon">↑</span>
+                  </div>
+                </div>
+                <div class="source-popover" id="source-menu-steps" hidden>
+                  <span class="source-search">⌕ &nbsp; Search for servers</span>
+                  <div class="source-list">
+                    <button
+                      type="button"
+                      data-source="GitHub"
+                      aria-pressed="false"
+                    >
+                      <strong>◉</strong>GitHub<span>Install</span></button
+                    ><button
+                      type="button"
+                      data-source="Figma"
+                      aria-pressed="false"
+                    >
+                      <strong>♧</strong>Figma<span>Install</span></button
+                    ><button
+                      type="button"
+                      data-source="Linear"
+                      aria-pressed="false"
+                    >
+                      <strong>◒</strong>Linear<span>Install</span>
+                    </button>
+                  </div>
+                  <p class="source-feedback" role="status" hidden></p>
+                </div>
+              </div>
+            </div>
+            <div class="connect-steps">
+              <article class="connect-step" data-step="0">
+                <div class="integration-ui">
+                  <div class="prompt-mini">
+                    <p>Connect your repository</p>
+                    <div class="prompt-tools">
+                      <span>＋</span><span>◎</span
+                      ><button
+                        type="button"
+                        class="sources-toggle"
+                        aria-expanded="false"
+                        aria-controls="source-mobile-0"
+                      >
+                        ☷ Sources
+                      </button>
+                    </div>
+                  </div>
+                  <div class="source-popover" id="source-mobile-0" hidden>
+                    <span class="source-search"
+                      >⌕ &nbsp; Search for servers</span
+                    >
+                    <div class="source-list">
+                      <button
+                        type="button"
+                        data-source="GitHub"
+                        aria-pressed="false"
+                      >
+                        <strong>◉</strong>GitHub<span>Install</span></button
+                      ><button
+                        type="button"
+                        data-source="Figma"
+                        aria-pressed="false"
+                      >
+                        <strong>♧</strong>Figma<span>Install</span>
+                      </button>
+                    </div>
+                    <p class="source-feedback" role="status" hidden></p>
+                  </div>
+                </div>
+                <h3>Give your repository a connected workspace</h3>
+                <p>
+                  Start with an existing project and the context that makes it
+                  yours. Keep the setup small so you can reach useful work
+                  quickly.
+                </p>
+              </article>
+              <article class="connect-step" data-step="1">
+                <div class="integration-ui">
+                  <div class="prompt-mini">
+                    <p>Choose your tools</p>
+                    <div class="prompt-tools">
+                      <span>＋</span><span>◎</span
+                      ><button
+                        type="button"
+                        class="sources-toggle"
+                        aria-expanded="false"
+                        aria-controls="source-mobile-1"
+                      >
+                        ☷ Sources
+                      </button>
+                    </div>
+                  </div>
+                  <div class="source-popover" id="source-mobile-1" hidden>
+                    <span class="source-search"
+                      >⌕ &nbsp; Available connections</span
+                    >
+                    <div class="source-list">
+                      <button
+                        type="button"
+                        data-source="Figma"
+                        aria-pressed="false"
+                      >
+                        <strong>♧</strong>Figma<span>Install</span></button
+                      ><button
+                        type="button"
+                        data-source="Linear"
+                        aria-pressed="false"
+                      >
+                        <strong>◒</strong>Linear<span>Install</span>
+                      </button>
+                    </div>
+                    <p class="source-feedback" role="status" hidden></p>
+                  </div>
+                </div>
+                <h3>Bring the tools that support your team</h3>
+                <p>
+                  Connect design references, issue trackers, and development
+                  services. Give every task the information it needs without
+                  scattering your attention.
+                </p>
+              </article>
+              <article class="connect-step" data-step="2">
+                <div class="integration-ui">
+                  <div class="prompt-mini">
+                    <p>Build a new feature</p>
+                    <div class="prompt-tools">
+                      <span>＋</span><span>◎</span
+                      ><button
+                        type="button"
+                        class="sources-toggle"
+                        aria-expanded="false"
+                        aria-controls="source-mobile-2"
+                      >
+                        ☷ Sources
+                      </button>
+                    </div>
+                  </div>
+                  <div class="source-popover" id="source-mobile-2" hidden>
+                    <span class="source-search">Your task is ready</span>
+                    <div class="source-list">
+                      <button
+                        type="button"
+                        data-tool-note="This is a scripted task preview. No agent service is connected."
+                      >
+                        <strong>✓</strong>Context connected<span>Ready</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <h3>Describe the outcome. Follow the work.</h3>
+                <p>
+                  Explain a feature, a bug, or a change in everyday language.
+                  Review suggestions against the context of your own
+                  application.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="testimonials">
+          <div class="section-heading">
+            <div class="badge">
+              <svg aria-hidden="true"><use href="#layers-icon" /></svg>Scale
+            </div>
+            <h2>
+              Good work travels through
+              <span class="gradient-text">good teams</span>
+            </h2>
+            <p>
+              Perspectives from an illustrative developer community. A picture
+              of what a more connected working day could feel like.
+            </p>
+          </div>
+          <div
+            class="testimonials-window"
+            aria-label="Illustrative customer testimonials"
+          >
+            <div class="marquee-row">
+              <div class="marquee-track" data-testimonials="0"></div>
+            </div>
+            <div class="marquee-row">
+              <div class="marquee-track" data-testimonials="1"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="pricing">
+          <div class="pricing-layout">
+            <div class="pricing-intro">
+              <h3>Build more.<br />Grow at your pace.</h3>
+              <p>
+                Explore the complete workflow with a two-week trial. Choose a
+                plan when you know how it fits your team.
+              </p>
+              <div class="billing-switch" aria-label="Billing period">
+                <button
+                  type="button"
+                  data-billing="monthly"
+                  aria-pressed="true"
+                >
+                  Monthly</button
+                ><button
+                  type="button"
+                  data-billing="annual"
+                  aria-pressed="false"
+                >
+                  Annually
+                </button>
+              </div>
+              <span class="sr-only" role="status" data-billing-status
+                >Monthly billing selected</span
+              >
+            </div>
+            <div class="plans">
+              <div class="hash-strip" aria-hidden="true"></div>
+              <div class="paid-plans">
+                <article class="price-plan">
+                  <h4>Startup <span class="popular">Popular</span></h4>
+                  <div class="price-value">
+                    <strong data-monthly="12" data-annual="120">$12</strong
+                    ><span data-period>/month</span>
+                  </div>
+                  <p class="plan-description">
+                    For independent builders and small teams
+                  </p>
+                  <a
+                    class="plan-action"
+                    href="#contact"
+                    data-start
+                    data-plan="Startup"
+                    >Upgrade to Pro</a
+                  >
+                  <hr />
+                  <p class="plan-features-title">All Free features, plus</p>
+                  <ul class="plan-features">
+                    <li>Custom domains</li>
+                    <li>Search engine optimization</li>
+                    <li>Generated API documentation</li>
+                    <li>Reusable UI components</li>
+                    <li>Commerce connections</li>
+                    <li>Authentication workflows</li>
+                    <li>Multiple language support</li>
+                    <li>Shared team workspaces</li>
+                  </ul>
+                </article>
+                <article class="price-plan">
+                  <h4>Enterprise</h4>
+                  <div class="price-value">
+                    <strong data-monthly="24" data-annual="240">$24</strong
+                    ><span data-period>/month</span>
+                  </div>
+                  <p class="plan-description">
+                    For larger teams with more connected projects
+                  </p>
+                  <a class="plan-action inverse" href="#contact" data-contact
+                    >Contact Sales</a
+                  >
+                  <hr />
+                  <p class="plan-features-title">All Startup features, plus</p>
+                  <ul class="plan-features">
+                    <li>Custom domains</li>
+                    <li>Search engine optimization</li>
+                    <li>Generated API documentation</li>
+                    <li>Reusable UI components</li>
+                    <li>Shared team workspaces</li>
+                  </ul>
+                </article>
+              </div>
+              <article class="free-plan">
+                <div>
+                  <h4>Free</h4>
+                  <div class="price-value">
+                    <strong data-monthly="0" data-annual="0">$0</strong
+                    ><span data-period>/month</span>
+                  </div>
+                  <p class="plan-description">
+                    A starting point for individual projects
+                  </p>
+                  <a
+                    class="plan-action inverse"
+                    href="#contact"
+                    data-start
+                    data-plan="Free"
+                    >Start Free</a
+                  >
+                </div>
+                <div>
+                  <p class="plan-features-title">Begin with the essentials:</p>
+                  <ul class="plan-features">
+                    <li>Custom domains</li>
+                    <li>Search engine optimization</li>
+                    <li>Generated API documentation</li>
+                    <li>Reusable UI components</li>
+                  </ul>
+                </div>
+              </article>
+              <div class="hash-strip" aria-hidden="true"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq">
+          <div class="faq-layout">
+            <div class="faq-copy">
+              <h2>Frequently Asked Questions</h2>
+              <p>
+                Get to know NolanCodes and the workflow behind it. Need a little
+                more detail? Start a conversation with our team.
+              </p>
+            </div>
+            <div class="faq-list">
+              <div class="faq-item">
+                <h3>
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="answer-1"
+                  >
+                    What is an AI Agent?<svg aria-hidden="true">
+                      <use href="#chevron-icon" />
+                    </svg>
+                  </button>
+                </h3>
+                <div id="answer-1" class="faq-answer" hidden>
+                  An AI agent combines instructions, context, and tools to work
+                  through a task. This sample illustrates that workflow with
+                  local interface demonstrations.
+                </div>
+              </div>
+              <div class="faq-item">
+                <h3>
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="answer-2"
+                  >
+                    How does NolanCodes work?<svg aria-hidden="true">
+                      <use href="#chevron-icon" />
+                    </svg>
+                  </button>
+                </h3>
+                <div id="answer-2" class="faq-answer" hidden>
+                  The concept brings repository context, coding suggestions, and
+                  review into one workspace. Here, the controls show example
+                  states without connecting to a repository or AI provider.
+                </div>
+              </div>
+              <div class="faq-item">
+                <h3>
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="answer-3"
+                  >
+                    How is project data handled?<svg aria-hidden="true">
+                      <use href="#chevron-icon" />
+                    </svg>
+                  </button>
+                </h3>
+                <div id="answer-3" class="faq-answer" hidden>
+                  This static preview does not upload code or send contact form
+                  details. The selected color theme and motion preference stay
+                  in your browser when local storage is available.
+                </div>
+              </div>
+              <div class="faq-item">
+                <h3>
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="answer-4"
+                  >
+                    Can I connect the tools I already use?<svg
+                      aria-hidden="true"
+                    >
+                      <use href="#chevron-icon" />
+                    </svg>
+                  </button>
+                </h3>
+                <div id="answer-4" class="faq-answer" hidden>
+                  The integration demonstration includes design and development
+                  tools. Selecting Install changes the local preview state; it
+                  does not install software or grant access to an account.
+                </div>
+              </div>
+              <div class="faq-item">
+                <h3>
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="answer-5"
+                  >
+                    Can I try it for free?<svg aria-hidden="true">
+                      <use href="#chevron-icon" />
+                    </svg>
+                  </button>
+                </h3>
+                <div id="answer-5" class="faq-answer" hidden>
+                  Yes. Explore every section and try the sample interactions.
+                  The prices and trial offer illustrate a product concept; no
+                  payment or subscription is created.
+                </div>
+              </div>
+              <div class="faq-item">
+                <h3>
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="answer-6"
+                  >
+                    Where does an assistant save time?<svg aria-hidden="true">
+                      <use href="#chevron-icon" />
+                    </svg>
+                  </button>
+                </h3>
+                <div id="answer-6" class="faq-answer" hidden>
+                  Assistants can help prepare repetitive code, explain
+                  unfamiliar files, and propose changes for review. The results
+                  still need thoughtful testing and the judgment of the people
+                  building the product.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="closing-cta" id="cta">
+          <div class="hero-content">
+            <h2>Give your next great feature a head start with NolanCodes</h2>
+            <p>
+              Keep the repetitive work moving. Make more room for the parts of
+              development that deserve your attention.
+            </p>
+            <a class="glow-button" href="#pricing">Start for free</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="footer">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="brand" href="index.html"
+              ><svg class="brand-mark" aria-hidden="true">
+                <use href="#brand-mark" /></svg
+              >NolanCodes</a
+            >
+          </div>
+          <div class="footer-links">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#integrations">Integrations</a></li>
+              <li><a href="#demo">Playground</a></li>
+              <li><a href="#integrations">Multi-Agent Workflows</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#faq">Terms of use</a></li>
+              <li><a href="#connect">API Reference</a></li>
+              <li><a href="#connect">Documentation</a></li>
+              <li><a href="#testimonials">Community</a></li>
+              <li><a href="#contact" data-contact>Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#company">About us</a></li>
+              <li><a href="#company">Our team</a></li>
+              <li><a href="#testimonials">Blog</a></li>
+              <li><a href="#workflow">Changelog</a></li>
+              <li><a href="#faq">Privacy</a></li>
+              <li><a href="#contact" data-contact>Careers</a></li>
+              <li><a href="#hero">Brand</a></li>
+              <li><a href="#contact" data-contact>Contact</a></li>
+              <li><a href="#faq">Legal</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 NolanCodes. All rights reserved.</p>
+          <button type="button" class="motion-toggle" aria-pressed="false">
+            Pause motion
+          </button>
+          <div class="social-links" aria-label="Demo social destinations">
+            <a href="#contact" data-contact aria-label="X social profile">𝕏</a
+            ><a href="#contact" data-contact aria-label="LinkedIn profile">in</a
+            ><a href="#contact" data-contact aria-label="GitHub profile">◉</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <dialog
+      class="preview-dialog"
+      id="start-dialog"
+      aria-labelledby="start-title"
+    >
+      <button
+        type="button"
+        class="dialog-close"
+        data-close
+        aria-label="Close preview"
+      >
+        ×</button
+      ><span class="demo-label">Local product demonstration</span>
+      <h2 id="start-title">Your next project starts here.</h2>
+      <p data-start-copy>
+        Explore the NolanCodes workflow with a sample plan. This static preview
+        does not create an account or start a subscription.
+      </p>
+      <a class="small-button" href="#workflow" data-dismiss
+        >Explore the workflow →</a
+      >
+    </dialog>
+    <dialog class="preview-dialog" id="contact" aria-labelledby="contact-title">
+      <button
+        type="button"
+        class="dialog-close"
+        data-close
+        aria-label="Close contact form"
+      >
+        ×</button
+      ><span class="demo-label">Local contact demonstration</span>
+      <h2 id="contact-title">Let’s talk about your project.</h2>
+      <p>
+        Try the form to see its local confirmation. Your details are not sent or
+        saved.
+      </p>
+      <form id="contact-form">
+        <label
+          >Email address<input
+            type="email"
+            name="email"
+            autocomplete="email"
+            required
+            placeholder="you@example.com" /></label
+        ><label
+          >What would you like to build?<textarea
+            name="project"
+            required
+            placeholder="A little context about your project…"
+          ></textarea></label
+        ><button class="small-button" type="submit">Preview request →</button>
+        <p class="dialog-status" role="status" hidden></p>
+      </form>
+    </dialog>
+    <dialog
+      class="preview-dialog"
+      id="tool-dialog"
+      aria-labelledby="tool-title"
+    >
+      <button
+        type="button"
+        class="dialog-close"
+        data-close
+        aria-label="Close explanation"
+      >
+        ×</button
+      ><span class="demo-label">Interface demonstration</span>
+      <h2 id="tool-title">A connected workspace.</h2>
+      <p data-tool-copy></p>
+      <button class="small-button" type="button" data-close>
+        Back to the example
+      </button>
+    </dialog>
+  </body>
+</html>

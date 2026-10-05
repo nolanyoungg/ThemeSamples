@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore Chroma workflows for product teams, design studios, and operations."
+    />
+    <meta name="theme-color" content="#171817" />
+    <title>Built for your rhythm — Chroma</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/base.css" />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/behavior.js" defer></script>
+    <script src="assets/scene.js" defer></script>
+  </head>
+  <body class="chroma page-solutions">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="Chroma home"
+          ><span class="brand-symbol" aria-hidden="true">◯</span>Chroma<span
+            class="brand-period"
+            >®</span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="product-menu"
+          >
+            Product <span aria-hidden="true">⌄</span>
+          </button>
+          <a href="solutions.html">Solutions</a>
+          <a href="pricing.html">Pricing</a>
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="stories-menu"
+          >
+            Journal <span aria-hidden="true">⌄</span>
+          </button>
+        </nav>
+        <a class="button nav-cta" href="contact.html"
+          >Get started <span aria-hidden="true">↗</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+      <div class="mega-menu" id="product-menu" hidden>
+        <div class="category-list" aria-label="Explore product">
+          <button
+            type="button"
+            class="category active"
+            data-category="0"
+            aria-pressed="true"
+            data-heading="Plan"
+            data-description="Make the next right thing obvious."
+            data-details="Shared briefs · Clear ownership · Connected decisions"
+            data-link="platform.html"
+            data-image="assets/flow.svg"
+          >
+            Plan<span>↗</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-category="1"
+            aria-pressed="false"
+            data-heading="Build"
+            data-description="Stay in the flow, all the way through."
+            data-details="Live projects · Review cycles · Flexible workflows"
+            data-link="platform.html#build"
+            data-image="assets/flow.svg"
+          >
+            Build<span>↗</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-category="2"
+            aria-pressed="false"
+            data-heading="Release"
+            data-description="A good finish is a better beginning."
+            data-details="Release views · Team insights · A complete history"
+            data-link="solutions.html"
+            data-image="assets/flow.svg"
+          >
+            Release<span>↗</span>
+          </button>
+        </div>
+        <div class="category-preview">
+          <img src="assets/flow.svg" alt="" width="480" height="300" />
+          <div>
+            <span class="eyebrow">A closer look</span>
+            <h2 data-menu-heading>Plan</h2>
+            <p data-menu-description>Make the next right thing obvious.</p>
+            <small data-menu-details
+              >Shared briefs · Clear ownership · Connected decisions</small
+            ><a class="text-link" data-menu-link href="platform.html"
+              >Explore <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="mega-menu editorial-menu" id="stories-menu" hidden>
+        <div>
+          <span class="eyebrow">From the notebook</span>
+          <h2>Ideas for the<br />work ahead.</h2>
+          <a class="text-link" href="journal.html">Read the journal ↗</a>
+        </div>
+        <a class="editorial-card" href="journal.html"
+          ><img src="assets/flow.svg" alt="" width="480" height="300" /><span
+            class="eyebrow"
+            >Perspective · 6 min read</span
+          >
+          <h3>Make room for meaningful work</h3>
+          <p>Thoughts on a more intentional way to create.</p></a
+        >
+        <a class="editorial-card" href="platform.html"
+          ><img src="assets/flow.svg" alt="" width="480" height="300" /><span
+            class="eyebrow"
+            >Inside the product</span
+          >
+          <h3>A few thoughtful foundations</h3>
+          <p>Take a closer look at the details that make the difference.</p></a
+        >
+      </div>
+    </header>
+    <div class="nav-backdrop" hidden></div>
+    <aside
+      id="mobile-drawer"
+      class="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation"
+      hidden
+    >
+      <div class="drawer-top">
+        <a class="brand" href="index.html">◯ Chroma</a
+        ><button
+          type="button"
+          class="drawer-close"
+          aria-label="Close navigation"
+        >
+          ✕
+        </button>
+      </div>
+      <p class="eyebrow">Find your way</p>
+      <details>
+        <summary>Product</summary>
+        <div>
+          <a href="platform.html">Plan ↗</a
+          ><a href="platform.html#build">Build ↗</a
+          ><a href="solutions.html">Release ↗</a>
+        </div>
+      </details>
+      <nav aria-label="Mobile navigation">
+        <a href="platform.html">Platform</a
+        ><a href="solutions.html">Solutions</a><a href="pricing.html">Pricing</a
+        ><a href="journal.html">Journal</a>
+      </nav>
+      <a class="button" href="contact.html">Get started ↗</a>
+      <p class="drawer-note">Good ideas deserve momentum.</p>
+    </aside>
+    <main id="main">
+      <section class="page-intro wrap">
+        <p class="eyebrow">Solutions / Different teams, shared momentum</p>
+        <h1>Find a rhythm<br />that feels like <em>yours.</em></h1>
+        <p class="lead">
+          From product releases to brand launches, the work changes. The need
+          for clarity stays the same.
+        </p>
+      </section>
+      <section class="wrap section" style="padding-top: 0">
+        <div class="team-selector" aria-label="Explore a team workflow">
+          <button type="button" data-team="product" aria-pressed="true">
+            Product teams</button
+          ><button type="button" data-team="design" aria-pressed="false">
+            Design studios</button
+          ><button type="button" data-team="operations" aria-pressed="false">
+            Operations
+          </button>
+        </div>
+        <div class="split solution-spotlight" aria-live="polite">
+          <div>
+            <span class="solution-number" data-team-number>01</span>
+            <h2 data-team-title>A release with everyone on the same page.</h2>
+            <p class="lead" data-team-copy>
+              Keep discovery, design, engineering, and the final decision
+              connected. Less time reconstructing context, more time building a
+              product that feels considered.
+            </p>
+            <a class="text-link" href="contact.html"
+              >Explore this workflow ↗</a
+            >
+          </div>
+          <div class="panel">
+            <p class="eyebrow" data-team-label>PRODUCT / THE WORKING LOOP</p>
+            <h3 data-team-flow>Discover → Build → Learn</h3>
+            <p data-team-detail>
+              Begin with the problem, bring decisions into the open, and turn
+              each release into a better starting point for the next.
+            </p>
+            <ul data-team-list>
+              <li>A shared opportunity brief</li>
+              <li>Connected design and engineering reviews</li>
+              <li>Release notes with a learning loop</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="warm-band">
+        <div class="section wrap">
+          <p class="eyebrow">The things every team needs</p>
+          <h2>A shared language.<br />Room for your own process.</h2>
+          <div class="grid-3" style="margin-top: 45px">
+            <article>
+              <h3>Make purpose visible.</h3>
+              <p>
+                Write down the outcome you are working toward, the decisions
+                that matter, and the people who need to be involved. Begin with
+                a common understanding.
+              </p>
+            </article>
+            <article>
+              <h3>Leave useful traces.</h3>
+              <p>
+                A decision without its reasoning becomes a future meeting.
+                Capture enough context to make the next conversation shorter and
+                the next choice clearer.
+              </p>
+            </article>
+            <article>
+              <h3>Close the loop.</h3>
+              <p>
+                Finishing the task is one part of finishing the work. Share what
+                changed, what you learned, and what should happen next.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="wrap section">
+        <div class="section-heading">
+          <h2>A smaller first step.</h2>
+          <p>You don't need to move everything at once.</p>
+        </div>
+        <div class="grid-3 feature-lines">
+          <article>
+            <span class="number">01 / CHOOSE</span>
+            <h3>Pick one real project.</h3>
+            <p>
+              Start with a piece of work that has a clear outcome, a few
+              collaborators, and enough moving parts to make the difference
+              visible.
+            </p>
+          </article>
+          <article>
+            <span class="number">02 / CONNECT</span>
+            <h3>Bring the context.</h3>
+            <p>
+              Add the brief, the open questions, and the people who can help
+              answer them. Leave room for your process to take shape.
+            </p>
+          </article>
+          <article>
+            <span class="number">03 / REFLECT</span>
+            <h3>Notice what improves.</h3>
+            <p>
+              Look for less repetition, clearer ownership, and better handoffs.
+              Keep the habits that make your working day feel lighter.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="closing wrap">
+        <p class="eyebrow">The next chapter</p>
+        <h2>Good work.<br />Your way.</h2>
+        <p>One shared space, with room for the way your team thinks.</p>
+        <a class="button" href="contact.html"
+          >Find your starting point <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div class="footer-top">
+        <a href="index.html" class="brand"
+          ><span class="brand-symbol" aria-hidden="true">◯</span>Chroma</a
+        >
+        <p>Good ideas deserve momentum.</p>
+        <a class="text-link" href="contact.html">Let's begin ↗</a>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="platform.html">Platform</a
+        ><a href="solutions.html">Solutions</a><a href="pricing.html">Pricing</a
+        ><a href="journal.html">Journal</a
+        ><a href="contact.html">Get started</a>
+      </nav>
+      <div class="footer-bottom">
+        <span>© 2026 Chroma. A fictional product.</span
+        ><span>Independent design preview · Local demos only</span
+        ><button class="motion-toggle" type="button" aria-pressed="false">
+          Pause motion
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,730 @@
+:root {
+  --paper: #f8f9f5;
+  --surface: #fff;
+  --ink: #232820;
+  --muted: #777e72;
+  --accent: #4c56e9;
+  --line: #dedfd8;
+  --tint: #eef0e9;
+  --radius: 5px;
+  --header: #f8f9f5f5;
+}
+.waypoint h1,
+.waypoint h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.055em;
+}
+.waypoint h1 em,
+.waypoint h2 em {
+  color: var(--accent);
+  font-weight: 400;
+}
+.brand {
+  font:
+    700 15px "Courier New",
+    monospace;
+  letter-spacing: 0.07em;
+}
+.brand-symbol {
+  font-size: 28px;
+  color: var(--accent);
+}
+.brand-period {
+  display: none;
+}
+.nav-shell {
+  height: 78px;
+  width: min(1170px, calc(100% - 80px));
+}
+.desktop-nav {
+  font:
+    10px "Courier New",
+    monospace;
+  text-transform: uppercase;
+  gap: 26px;
+}
+.button {
+  font:
+    10px/1.6 "Courier New",
+    monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+}
+.nav-cta {
+  background: var(--accent);
+  color: #fff;
+}
+.wrap {
+  max-width: 1120px;
+}
+.waypoint .section-heading h2 {
+  font-size: clamp(37px, 4.8vw, 61px);
+}
+.waypoint .mega-menu h2 {
+  font-family: Arial, sans-serif;
+  font-size: 29px;
+  letter-spacing: -0.04em;
+}
+.waypoint-hero {
+  text-align: center;
+  padding: 58px 24px 42px;
+}
+.announcement {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  align-items: center;
+  gap: 11px;
+  padding-right: 12px;
+  font-size: 10px;
+  background: #fff;
+  margin-bottom: 30px;
+  color: #74796e;
+}
+.announcement span {
+  background: var(--accent);
+  color: #fff;
+  padding: 5px 9px;
+  font:
+    9px/1.6 "Courier New",
+    monospace;
+}
+.waypoint-hero h1 {
+  font-size: clamp(52px, 6.6vw, 89px);
+  line-height: 1.05;
+  max-width: 900px;
+  margin: 0 auto 23px;
+}
+.waypoint-hero .lead {
+  font-size: 16px;
+  max-width: 510px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+}
+.waypoint-hero .actions {
+  justify-content: center;
+}
+.landscape {
+  position: relative;
+  min-height: 510px;
+  overflow: hidden;
+  background: #bac8c7;
+  isolation: isolate;
+}
+.landscape > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: -2;
+}
+.landscape canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  image-rendering: pixelated;
+}
+.landscape:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, #0e252217, transparent 35%, #0e252231);
+}
+.run-console {
+  position: relative;
+  width: min(630px, calc(100% - 50px));
+  margin: 66px auto 0;
+  background: #fafbf8f5;
+  border: 1px solid #fff;
+  border-radius: 9px;
+  padding: 22px 24px;
+  box-shadow: 0 18px 70px #112b2840;
+  text-align: left;
+  backdrop-filter: blur(18px);
+}
+.run-console .eyebrow {
+  font-size: 9px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.run-console h3 {
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+  max-width: 500px;
+  margin-bottom: 23px;
+}
+.run-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.run-controls select {
+  max-width: calc(100% - 130px);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 8px 10px;
+  background: #f3f5ee;
+  color: #596050;
+  font-size: 10px;
+}
+.run-controls button {
+  padding: 9px 15px;
+  min-height: 35px;
+  gap: 12px;
+}
+.run-track {
+  display: flex;
+  gap: 6px;
+  margin-top: 22px;
+}
+.run-track span {
+  flex: 1;
+  height: 3px;
+  background: #dedfd8;
+  transition: background 0.4s;
+}
+.run-track span.complete {
+  background: var(--accent);
+}
+.run-status {
+  font:
+    9px/1.8 "Courier New",
+    monospace;
+  margin: 10px 0 0;
+  color: #747b6b;
+}
+.landscape-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 25px;
+  right: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #fff;
+  font:
+    9px "Courier New",
+    monospace;
+  text-shadow: 0 1px 6px #123;
+}
+.landscape-caption span {
+  color: #fff;
+}
+.run-output {
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--ink);
+}
+.landscape.demo-complete {
+  min-height: 590px;
+}
+.foundation-strip {
+  padding: 27px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid var(--line);
+  gap: 28px;
+}
+.foundation-strip span {
+  font:
+    10px "Courier New",
+    monospace;
+  letter-spacing: 0.03em;
+}
+.foundation-strip b {
+  font-weight: 400;
+  color: var(--accent);
+  margin-right: 10px;
+}
+.logos {
+  text-align: center;
+  padding: 55px 0;
+}
+.logos .eyebrow {
+  font-size: 9px;
+}
+.logos-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  flex-wrap: wrap;
+  font:
+    600 21px Georgia,
+    serif;
+  color: #8e9487;
+}
+.waypoint .panel {
+  background: #fff;
+}
+.principle-card {
+  padding: 32px 26px;
+  border: 1px solid var(--line);
+  background: #fafbf7;
+  min-height: 265px;
+}
+.principle-card h3 {
+  font-size: 21px;
+  letter-spacing: -0.03em;
+}
+.principle-card p {
+  font-size: 13px;
+}
+.pixel-icon {
+  display: block;
+  font:
+    40px/1 "Courier New",
+    monospace;
+  color: var(--accent);
+  margin-bottom: 30px;
+}
+.workspace-window {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px #3e462607;
+}
+.workspace-bar {
+  border-bottom: 1px solid var(--line);
+  padding: 15px 18px;
+  display: flex;
+  justify-content: space-between;
+  color: #747b69;
+  font:
+    10px "Courier New",
+    monospace;
+}
+.workspace-files {
+  padding: 10px 20px;
+}
+.workspace-files div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid #eaede4;
+  padding: 14px 0;
+  font:
+    11px "Courier New",
+    monospace;
+}
+.workspace-files div:last-child {
+  border: none;
+}
+.workspace-files span {
+  color: var(--muted);
+}
+.workspace-note {
+  background: #f0f2e9;
+  padding: 18px 20px;
+  font-size: 11px;
+  color: #717a62;
+}
+.sdk-window {
+  background: #22281f;
+  border-radius: 7px;
+  overflow: hidden;
+  color: #e6eddf;
+  box-shadow: 0 20px 50px #1c2a1610;
+}
+.sdk-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #404735;
+  padding: 12px 18px;
+  gap: 18px;
+}
+.sdk-tabs {
+  display: flex;
+  gap: 4px;
+}
+.sdk-tabs button,
+.copy-code {
+  font:
+    10px "Courier New",
+    monospace;
+  color: #c0cbb2;
+  padding: 8px 11px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.sdk-tabs button[aria-pressed="true"] {
+  border-color: #5b634e;
+  color: #f3f7ec;
+  background: #31392a;
+}
+.copy-code {
+  border: 1px solid #505946;
+}
+.sdk-window pre {
+  margin: 0;
+  padding: 28px;
+  overflow-x: auto;
+  font:
+    12px/1.9 "Courier New",
+    monospace;
+  min-height: 267px;
+  tab-size: 2;
+}
+.sdk-window code {
+  color: #c5d8ad;
+}
+.sdk-foot {
+  font:
+    9px "Courier New",
+    monospace;
+  color: #94a286;
+  padding: 15px 20px;
+  border-top: 1px solid #3c4533;
+}
+.platform-band {
+  background: #eff1e9;
+}
+.waypoint .closing {
+  background: #edf0e7;
+  border: 1px solid #d8dfcc;
+  position: relative;
+  overflow: hidden;
+}
+.waypoint .closing:before,
+.waypoint .closing:after {
+  content: "+";
+  font:
+    220px "Courier New",
+    monospace;
+  position: absolute;
+  color: #dbe1d2;
+  z-index: 0;
+  left: -35px;
+  bottom: -85px;
+  pointer-events: none;
+}
+.waypoint .closing:after {
+  left: auto;
+  right: -30px;
+  top: -90px;
+  bottom: auto;
+}
+.waypoint .closing > * {
+  position: relative;
+  z-index: 1;
+}
+.waypoint .closing .button {
+  background: var(--accent);
+  color: white;
+}
+.waypoint .closing h2 {
+  max-width: 650px;
+}
+.context-switch {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.context-switch button {
+  border: 1px solid var(--line);
+  background: none;
+  padding: 9px 13px;
+  border-radius: 4px;
+  font:
+    10px "Courier New",
+    monospace;
+}
+.context-switch button[aria-pressed="true"] {
+  border-color: #858bed;
+  background: #eeefff;
+  color: var(--accent);
+}
+.context-detail {
+  padding: 27px;
+}
+.context-detail h3 {
+  font-size: 23px;
+}
+.context-detail p {
+  font-size: 13px;
+}
+.context-files {
+  font:
+    11px/2.2 "Courier New",
+    monospace;
+  color: #59614e;
+}
+.permission-row {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.permission-row strong {
+  font-size: 13px;
+  font-weight: 500;
+}
+.permission-row small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+}
+.permission-row input {
+  accent-color: var(--accent);
+  width: 19px;
+  height: 19px;
+}
+.permission-note {
+  font:
+    10px/1.8 "Courier New",
+    monospace;
+  margin: 22px 0 0;
+}
+.architecture {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.architecture article {
+  padding-top: 25px;
+  border-top: 1px solid var(--line);
+}
+.architecture h3 {
+  font-size: 24px;
+}
+.architecture p {
+  font-size: 14px;
+}
+.waypoint .price {
+  font-family: Georgia, serif;
+}
+.waypoint .price-card.featured {
+  background: #f2f3fd;
+  border-color: #9a9ee2;
+}
+.waypoint .article-intro h1 {
+  font-size: clamp(48px, 6vw, 83px);
+}
+.waypoint .article-image {
+  max-height: 490px;
+}
+.waypoint .prose h2 {
+  font-size: 38px;
+}
+.waypoint .prose blockquote {
+  font-family: Georgia, serif;
+  color: #4b536c;
+}
+.endpoint-list {
+  padding-left: 0;
+  list-style: none;
+}
+.endpoint-list li {
+  border-top: 1px solid var(--line);
+  padding: 22px 0;
+}
+.endpoint-list code {
+  font:
+    12px "Courier New",
+    monospace;
+  color: var(--accent);
+}
+.endpoint-list p {
+  font-size: 13px;
+  margin: 10px 0 0;
+}
+.reading-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.reading-card img {
+  width: 100%;
+  height: 310px;
+}
+.reading-card > div {
+  padding: 40px;
+}
+.reading-card h3 {
+  font:
+    35px/1.15 Georgia,
+    serif;
+  letter-spacing: -0.04em;
+}
+.reading-card p {
+  font-size: 13px;
+}
+.waypoint .contact-aside h2 {
+  font-size: 43px;
+}
+.waypoint .footer-top .brand {
+  font-size: 18px;
+}
+@media (max-width: 1000px) {
+  .nav-shell {
+    gap: 24px;
+  }
+  .desktop-nav {
+    gap: 20px;
+  }
+  .nav-cta {
+    padding: 11px 14px;
+    gap: 15px;
+  }
+  .waypoint-hero h1 {
+    font-size: 73px;
+  }
+}
+@media (max-width: 800px) {
+  .nav-shell {
+    width: calc(100% - 48px);
+  }
+  .waypoint-hero {
+    padding-top: 45px;
+  }
+  .waypoint-hero h1 {
+    font-size: 65px;
+  }
+  .landscape {
+    min-height: 480px;
+  }
+  .run-console {
+    margin-top: 55px;
+  }
+  .principle-card {
+    min-height: 0;
+  }
+  .architecture {
+    gap: 20px;
+  }
+  .reading-card > div {
+    padding: 28px;
+  }
+  .reading-card h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 560px) {
+  .nav-shell {
+    width: calc(100% - 40px);
+    height: 68px;
+  }
+  .waypoint-hero {
+    padding: 37px 20px 32px;
+  }
+  .announcement {
+    font-size: 8px;
+    gap: 7px;
+    padding-right: 8px;
+    margin-bottom: 25px;
+  }
+  .announcement span {
+    font-size: 8px;
+  }
+  .waypoint-hero h1 {
+    font-size: 51px;
+    line-height: 1.04;
+  }
+  .waypoint-hero .lead {
+    font-size: 14px;
+    max-width: 315px;
+  }
+  .waypoint-hero .actions .button {
+    font-size: 9px;
+  }
+  .landscape {
+    min-height: 460px;
+    width: calc(100% - 24px);
+  }
+  .run-console {
+    width: calc(100% - 30px);
+    margin-top: 40px;
+    padding: 19px 17px;
+  }
+  .run-console h3 {
+    font-size: 15px;
+  }
+  .run-controls {
+    gap: 10px;
+  }
+  .run-controls select {
+    max-width: calc(100% - 105px);
+    font-size: 9px;
+    padding: 9px 5px;
+  }
+  .run-controls button {
+    font-size: 9px;
+    padding: 9px 10px;
+    gap: 6px;
+  }
+  .run-console .eyebrow {
+    font-size: 8px;
+  }
+  .landscape-caption {
+    font-size: 8px;
+    left: 17px;
+    right: 17px;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .foundation-strip {
+    gap: 20px;
+    grid-template-columns: 1fr;
+    padding: 25px 0;
+  }
+  .foundation-strip span {
+    font-size: 10px;
+  }
+  .logos {
+    padding: 35px 0;
+  }
+  .logos-row {
+    font-size: 20px;
+    gap: 22px;
+  }
+  .architecture {
+    grid-template-columns: 1fr;
+  }
+  .sdk-window pre {
+    padding: 21px;
+    font-size: 10px;
+    min-height: 240px;
+  }
+  .sdk-top {
+    padding: 11px;
+  }
+  .sdk-tabs button,
+  .copy-code {
+    font-size: 9px;
+    padding: 8px;
+  }
+  .reading-card {
+    grid-template-columns: 1fr;
+  }
+  .reading-card img {
+    height: 240px;
+  }
+  .reading-card > div {
+    padding: 28px;
+  }
+  .waypoint .closing h2 {
+    font-size: 40px;
+  }
+  .landscape.demo-complete {
+    min-height: 610px;
+  }
+}
