@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Homes & real estate photography — Fieldwork Photo</title>
+    <meta
+      name="description"
+      content="Fieldwork Photo: photography for pets, portraits, families, homes, and events, with a customizable archive print shop. An independent static design preview."
+    />
+    <meta name="theme-color" content="#f7f5f0" />
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+    <link
+      rel="preload"
+      href="assets/inter-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/dm-serif-display-regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/catalog.js" defer></script>
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body class="page-homes">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Fieldwork Photo home"
+          ><span class="brand-mark" aria-hidden="true"></span
+          ><span>fieldwork<small>photo studio</small></span></a
+        >
+        <nav class="main-nav" aria-label="Main navigation">
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="services-menu"
+          >
+            <span class="nav-label">Sessions</span
+            ><svg
+              class="nav-chevron"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 6 4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></button
+          ><a href="portfolio.html">The portfolio</a
+          ><button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="prints-menu"
+          >
+            <span class="nav-label">Print shop</span
+            ><svg
+              class="nav-chevron"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 6 4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></button
+          ><a href="studio.html">The studio</a>
+        </nav>
+        <div class="header-actions">
+          <a class="cart-link" href="bag.html" aria-label="Print bag"
+            >Bag <span class="cart-count" data-cart-count>0</span></a
+          ><a class="button orange" href="booking.html"
+            >Let's make a photograph <span aria-hidden="true">↗</span></a
+          ><button
+            type="button"
+            class="menu-toggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 8h18M3 16h18" stroke="currentColor" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="nav-panel" id="services-menu" hidden>
+        <div class="nav-categories">
+          <p class="eyebrow">Find your story</p>
+          <button type="button" data-category="pets" aria-pressed="true">
+            Pets<svg
+              class="nav-destination-arrow"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 12 8-8M4 4h8v8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></button
+          ><button type="button" data-category="portraits" aria-pressed="false">
+            Portraits<svg
+              class="nav-destination-arrow"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 12 8-8M4 4h8v8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></button
+          ><button type="button" data-category="family" aria-pressed="false">
+            Families<svg
+              class="nav-destination-arrow"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 12 8-8M4 4h8v8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></button
+          ><button type="button" data-category="homes" aria-pressed="false">
+            Homes & real estate<svg
+              class="nav-destination-arrow"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 12 8-8M4 4h8v8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></button
+          ><button type="button" data-category="events" aria-pressed="false">
+            Events<svg
+              class="nav-destination-arrow"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 12 8-8M4 4h8v8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="nav-preview">
+          <img
+            src="assets/pets-sunset.jpg"
+            alt="A golden retriever in a meadow beneath a low evening sun"
+            width="1800"
+            height="1200"
+            class=""
+            loading="lazy"
+            data-menu-image
+          />
+          <div>
+            <p class="eyebrow" data-menu-label>For the ones with paws</p>
+            <h2 data-menu-title>Small paws. Big personality.</h2>
+            <p data-menu-copy>
+              Playful, patient photographs of your favourite companion, with
+              room to sniff, wander, and just be themselves.
+            </p>
+            <small data-menu-detail>45–90 minute sessions / From $275</small
+            ><a class="text-link" data-menu-link href="pets.html"
+              >Explore the session ↗</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="nav-panel print-menu" id="prints-menu" hidden>
+        <div>
+          <p class="eyebrow">From the archive, to your wall</p>
+          <h2>
+            Good photographs<br />deserve a little<br /><span
+              style="color: var(--orange)"
+              >wall space.</span
+            >
+          </h2>
+          <a href="prints.html" class="text-link">Explore the print shop ↗</a>
+        </div>
+        <a class="menu-editorial" href="print.html?art=forest"
+          ><img
+            src="assets/print-forest.jpg"
+            alt="[Fontainebleau Forest] — Eugène Cuvelier"
+            width="2400"
+            height="1855"
+            class=""
+            loading="lazy"
+          />
+          <h3>The Archive Editions</h3>
+          <p>Three public-domain photographs, thoughtfully presented.</p></a
+        ><a class="menu-editorial" href="prints.html#sizes"
+          ><img
+            src="assets/print-yosemite.jpg"
+            alt="General View of Yosemite — Attributed to Carleton E. Watkins"
+            width="1800"
+            height="2400"
+            class=""
+            loading="lazy"
+          />
+          <h3>Find your perfect fit.</h3>
+          <p>Seven print sizes. Four frame choices. All the details.</p></a
+        >
+      </div>
+    </header>
+    <div class="backdrop" hidden></div>
+    <aside
+      class="mobile-drawer"
+      id="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation"
+      hidden
+    >
+      <div class="drawer-top">
+        <a class="brand" href="index.html" aria-label="Fieldwork Photo home"
+          ><span class="brand-mark" aria-hidden="true"></span
+          ><span>fieldwork<small>photo studio</small></span></a
+        ><button
+          type="button"
+          class="icon-button drawer-close"
+          aria-label="Close navigation"
+        >
+          ×
+        </button>
+      </div>
+      <nav aria-label="Mobile navigation">
+        <details>
+          <summary>
+            <span>Photography sessions</span
+            ><svg
+              class="nav-chevron"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 6 4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </summary>
+          <a href="pets.html">Pets</a><a href="portraits.html">Portraits</a
+          ><a href="family.html">Families</a
+          ><a href="homes.html">Homes & real estate</a
+          ><a href="events.html">Events</a>
+        </details>
+        <a href="portfolio.html">The portfolio</a>
+        <details>
+          <summary>
+            <span>The print shop</span
+            ><svg
+              class="nav-chevron"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 6 4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </summary>
+          <a href="prints.html">Archive prints</a
+          ><a href="prints.html#sizes">Sizes &amp; frame options</a
+          ><a href="bag.html">Your print bag</a>
+        </details>
+        <a href="studio.html">The studio</a>
+      </nav>
+      <a class="button orange" href="booking.html">Plan a session ↗</a>
+      <p class="drawer-foot">
+        People. Places. The in-between.<br />Photographs worth keeping.
+      </p>
+    </aside>
+    <main id="main">
+      <noscript
+        ><p class="noscript-note">
+          Explore the pages freely. Print configuration, the local bag, and demo
+          forms require JavaScript.
+        </p></noscript
+      >
+      <section class="service-intro">
+        <div class="service-title">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span>/</span
+            ><span>Homes & real estate</span>
+          </nav>
+          <p class="eyebrow">Architecture / interiors / property</p>
+          <h1>Every room,<br />a point of view.</h1>
+          <p class="lead">
+            Interior, exterior, and property photography that helps a space make
+            a thoughtful first impression.
+          </p>
+          <div class="actions">
+            <a class="button orange" href="booking.html?service=homes"
+              >Let's plan a session ↗</a
+            ><a class="text-link" href="#packages">The details ↓</a>
+          </div>
+          <p class="small-info">Property and editorial coverage / From $225</p>
+        </div>
+        <figure>
+          <img
+            src="assets/home-minimal.jpg"
+            alt="A contemporary living room with a pale sofa and a floating wooden staircase"
+            width="1800"
+            height="1157"
+            class=""
+            fetchpriority="high"
+          />
+          <figcaption class="image-credit overlay-credit">
+            Photo:
+            <a
+              href="https://www.pexels.com/photo/interior-design-of-a-house-1571460/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Viaceslav Kat / Pexels</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <section class="section wrap session-copy">
+        <div>
+          <p class="eyebrow">A thoughtful approach</p>
+          <h2>Show the space. Keep its character.</h2>
+        </div>
+        <div>
+          <p class="lead">
+            A room is more than its dimensions. We look for natural transitions,
+            useful sightlines, details of material, and the light that gives a
+            space its personality.
+          </p>
+          <p>
+            The approach balances broad views with the smaller details that make
+            a listing or design story feel complete. Before a real booking,
+            access, room count, shot list, and intended usage would be
+            confirmed.
+          </p>
+        </div>
+      </section>
+      <section class="wrap session-gallery">
+        <figure>
+          <img
+            src="assets/home-minimal.jpg"
+            alt="A contemporary living room with a pale sofa and a floating wooden staircase"
+            width="1800"
+            height="1157"
+            class=""
+            loading="lazy"
+          />
+          <figcaption class="image-credit">
+            Photo:
+            <a
+              href="https://www.pexels.com/photo/interior-design-of-a-house-1571460/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Viaceslav Kat / Pexels</a
+            >
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="assets/home-sunlit.jpg"
+            alt="A bright living room with pale sofas, tall windows, and a wooden railing"
+            width="1800"
+            height="1012"
+            class=""
+            loading="lazy"
+          />
+          <figcaption class="image-credit">
+            Photo:
+            <a
+              href="https://www.pexels.com/photo/spacious-modern-living-room-interior-design-37192236/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Peter Vang / Pexels</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <section class="section wrap" id="packages">
+        <div class="section-top">
+          <div>
+            <p class="eyebrow">A starting point for your story</p>
+            <h2>Choose a little<br />room to create.</h2>
+          </div>
+          <p>
+            Illustrative packages for this studio preview. The enquiry form
+            builds a local sample plan; it does not make a booking.
+          </p>
+        </div>
+        <div class="package-grid">
+          <article class="package">
+            <p class="eyebrow">01 / Homes & real estate</p>
+            <h3>The listing collection</h3>
+            <p class="package-price">$225<small>sample package / USD</small></p>
+            <ul>
+              <li>Interior and exterior photographs</li>
+              <li>Homes up to 2,000 square feet</li>
+              <li>20 edited listing images</li>
+              <li>Web-ready and high-resolution delivery</li>
+            </ul>
+            <a
+              href="booking.html?service=homes&amp;package=0"
+              class="button outline"
+              >Plan this session ↗</a
+            >
+          </article>
+          <article class="package featured">
+            <p class="eyebrow">02 / Homes & real estate</p>
+            <h3>The property story</h3>
+            <p class="package-price">$450<small>sample package / USD</small></p>
+            <ul>
+              <li>Extended coverage up to 4,000 square feet</li>
+              <li>35 edited photographs</li>
+              <li>Architectural details and feature rooms</li>
+              <li>A tailored shot list and usage discussion</li>
+            </ul>
+            <a
+              href="booking.html?service=homes&amp;package=1"
+              class="button orange"
+              >Plan this session ↗</a
+            >
+          </article>
+        </div>
+      </section>
+      <section class="section wrap faq-grid" style="padding-top: 0">
+        <div>
+          <p class="eyebrow">Before we begin</p>
+          <h2>A few good<br />questions.</h2>
+        </div>
+        <div>
+          <details>
+            <summary>How should the property be prepared?</summary>
+            <p>
+              Clear countertops, open curtains, make beds, and remove personal
+              paperwork. A short preparation checklist helps make the most of
+              the scheduled time.
+            </p>
+          </details>
+          <details>
+            <summary>Are floor plans or aerial images included?</summary>
+            <p>
+              They are not included in these sample packages. Any specialist
+              coverage would need to be scoped separately rather than assumed.
+            </p>
+          </details>
+          <details>
+            <summary>Can the photos be used for a design portfolio?</summary>
+            <p>
+              That can be discussed when planning the brief. Listing,
+              architectural, and commercial usage have different needs; a real
+              agreement would define the intended use.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <section class="callout">
+      <div class="wrap callout-inner">
+        <div>
+          <p class="eyebrow">A good place to start</p>
+          <h2>
+            What would you<br />like to
+            <span class="heading-accent">remember?</span>
+          </h2>
+        </div>
+        <a class="button" href="booking.html"
+          >Tell us a little about it <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </section>
+    <footer class="site-footer wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Fieldwork Photo home"
+            ><span class="brand-mark" aria-hidden="true"></span
+            ><span>fieldwork<small>photo studio</small></span></a
+          >
+          <p>
+            People, places, and the moments in between. A thoughtful photography
+            studio concept for a life well documented.
+          </p>
+        </div>
+        <div>
+          <h2>Photography</h2>
+          <nav aria-label="Photography services">
+            <a href="pets.html">Pets</a><a href="portraits.html">Portraits</a
+            ><a href="family.html">Families</a
+            ><a href="homes.html">Homes & real estate</a
+            ><a href="events.html">Events</a>
+          </nav>
+        </div>
+        <div>
+          <h2>On your wall</h2>
+          <nav aria-label="Print shop links">
+            <a href="prints.html">The Archive Editions</a
+            ><a href="prints.html#sizes">Print size guide</a
+            ><a href="print.html">Choose a frame</a
+            ><a href="bag.html">Your print bag</a>
+          </nav>
+        </div>
+        <div>
+          <h2>The details</h2>
+          <nav aria-label="Studio links">
+            <a href="portfolio.html">The portfolio</a
+            ><a href="studio.html">Our approach</a
+            ><a href="booking.html">Plan a session</a
+            ><a href="studio.html#questions">Common questions</a
+            ><a href="assets/sources.txt">Photo credits &amp; licenses</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Fieldwork Photo · Fictional studio preview</span
+        ><span
+          >Licensed illustrative portfolio · Public-domain archive prints · No
+          real bookings or orders</span
+        ><a href="#main">Back to top ↑</a>
+      </div>
+    </footer>
+    <div class="toast" id="bag-toast" role="status" hidden>
+      <span data-toast-message></span><a href="bag.html">View bag ↗</a>
+    </div>
+  </body>
+</html>

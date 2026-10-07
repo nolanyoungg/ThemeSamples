@@ -1,0 +1,80 @@
+MORROW BODY — PHOTOGRAPHY AND ASSET SOURCES
+Source pages and license checked: 2026-10-07
+
+All six photographs were found online on Pexels. No AI images were generated
+or used. The selected photographs show unbranded packaging, a cream texture,
+and botanical still lifes; they do not include identifiable people or logos.
+They illustrate a fictional store, not actual Morrow products or formulations.
+
+LICENSE AND REUSE
+Pexels License: https://www.pexels.com/license/
+The license permits free use and modification, including use in websites,
+e-commerce shops, and templates. Attribution is appreciated but not required.
+Do not sell unaltered images, redistribute them on stock/wallpaper platforms,
+use them as a trademark, or imply endorsement by depicted people or brands.
+These are licensed photographs, not a claim that copyright does not exist.
+Keep this record with the sample when copying it.
+
+1. daily-veil.jpg
+Photographer: Mikhail Nilov
+Title: White Cosmetic Plastic Pump Bottle With Beige Background
+Source: https://www.pexels.com/photo/white-cosmetic-plastic-pump-bottle-with-beige-background-7814990/
+Download: https://images.pexels.com/photos/7814990/pexels-photo-7814990.jpeg?auto=compress&cs=tinysrgb&w=1800
+Pexels photo ID: 7814990
+Used for: Main hero, Daily Veil product imagery, navigation, search, bag.
+
+2. daily-veil-detail.jpg
+Photographer: Mikhail Nilov
+Title: White Plastic Pump Bottle With Shadow On Beige Background
+Source: https://www.pexels.com/photo/white-plastic-pump-bottle-with-shadow-on-beige-background-7814991/
+Download: https://images.pexels.com/photos/7814991/pexels-photo-7814991.jpeg?auto=compress&cs=tinysrgb&w=1800
+Pexels photo ID: 7814991
+Used for: Daily Veil alternate product photograph.
+
+3. cream-texture.jpg
+Photographer: Jana Kukebal
+Title: Texture of Cream
+Source: https://www.pexels.com/photo/texture-of-cream-6496465/
+Download: https://images.pexels.com/photos/6496465/pexels-photo-6496465.jpeg?auto=compress&cs=tinysrgb&w=1800
+Pexels photo ID: 6496465
+Used for: Texture details and editorial sections.
+
+4. evening-balm.jpg
+Photographer: Alesia Kozik
+Title: Jar of Beeswax Cosmetic
+Source: https://www.pexels.com/photo/jar-of-beeswax-cosmetic-7795397/
+Download: https://images.pexels.com/photos/7795397/pexels-photo-7795397.jpeg?auto=compress&cs=tinysrgb&w=1800
+Pexels photo ID: 7795397
+Used for: Evening Balm imagery, journal and article, navigation, search, bag.
+
+5. cloud-cream.jpg
+Photographer: Alesia Kozik
+Title: Cosmetic Jar and Flowers
+Source: https://www.pexels.com/photo/cosmetic-jar-and-flowers-7797121/
+Download: https://images.pexels.com/photos/7797121/pexels-photo-7797121.jpeg?auto=compress&cs=tinysrgb&w=1800
+Pexels photo ID: 7797121
+Used for: Cloud Cream imagery, homepage editorial, ritual finder, navigation.
+
+6. still-hands.jpg
+Photographer: Polina (display name on Pexels)
+Title: Close-up Photo of a Cosmetic Jar
+Source: https://www.pexels.com/photo/close-up-photo-of-a-cosmetic-jar-8101550/
+Download: https://images.pexels.com/photos/8101550/pexels-photo-8101550.jpeg?auto=compress&cs=tinysrgb&w=1800
+Pexels photo ID: 8101550
+Used for: Still Hands imagery, brand story, navigation, search, bag.
+
+MODIFICATIONS
+The Pexels image CDN supplied optimized JPEGs at 1800 pixels wide. The site
+uses CSS object-fit cropping and hover zooms. No generative image edits,
+label replacement, watermark removal, or AI-created imagery was used.
+
+FONT
+Geist, copied from the repository's existing licensed local font asset.
+Source: https://github.com/vercel/geist-font
+License: SIL Open Font License 1.1, retained in font-license.txt.
+The serif display type uses the visitor's installed Georgia / Times New Roman.
+
+ORIGINAL WORK
+Brand text, fictional product copy, editorial essay, layouts, SVG interface
+icons, and interaction code were authored for this independent sample.
+No paid storefront template or third-party storefront source was copied.

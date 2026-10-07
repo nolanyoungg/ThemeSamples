@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Demo checkout — Fieldwork Photo</title>
+    <meta
+      name="description"
+      content="Fieldwork Photo: photography for pets, portraits, families, homes, and events, with a customizable archive print shop. An independent static design preview."
+    />
+    <meta name="theme-color" content="#f7f5f0" />
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+    <link
+      rel="preload"
+      href="assets/inter-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/dm-serif-display-regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/catalog.js" defer></script>
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body class="page-checkout">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Fieldwork Photo home"
+          ><span class="brand-mark" aria-hidden="true"></span
+          ><span>fieldwork<small>photo studio</small></span></a
+        >
+        <nav class="main-nav" aria-label="Main navigation">
+          <button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="services-menu"
+          >
+            <span class="nav-label">Sessions</span
+            ><svg
+              class="nav-chevron"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 6 4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></button
+          ><a href="portfolio.html">The portfolio</a
+          ><button
+            type="button"
+            class="nav-trigger"
+            aria-expanded="false"
+            aria-controls="prints-menu"
+          >
+            <span class="nav-label">Print shop</span
+            ><svg
+              class="nav-chevron"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 6 4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></button
+          ><a href="studio.html">The studio</a>
+        </nav>
+        <div class="header-actions">
+          <a class="cart-link" href="bag.html" aria-label="Print bag"
+            >Bag <span class="cart-count" data-cart-count>0</span></a
+          ><a class="button orange" href="booking.html"
+            >Let's make a photograph <span aria-hidden="true">↗</span></a
+          ><button
+            type="button"
+            class="menu-toggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 8h18M3 16h18" stroke="currentColor" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="nav-panel" id="services-menu" hidden>
+        <div class="nav-categories">
+          <p class="eyebrow">Find your story</p>
+          <button type="button" data-category="pets" aria-pressed="true">
+            Pets<svg
+              class="nav-destination-arrow"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 12 8-8M4 4h8v8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></button
+          ><button type="button" data-category="portraits" aria-pressed="false">
+            Portraits<svg
+              class="nav-destination-arrow"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 12 8-8M4 4h8v8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></button
+          ><button type="button" data-category="family" aria-pressed="false">
+            Families<svg
+              class="nav-destination-arrow"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 12 8-8M4 4h8v8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></button
+          ><button type="button" data-category="homes" aria-pressed="false">
+            Homes & real estate<svg
+              class="nav-destination-arrow"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 12 8-8M4 4h8v8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></button
+          ><button type="button" data-category="events" aria-pressed="false">
+            Events<svg
+              class="nav-destination-arrow"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 12 8-8M4 4h8v8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="nav-preview">
+          <img
+            src="assets/pets-sunset.jpg"
+            alt="A golden retriever in a meadow beneath a low evening sun"
+            width="1800"
+            height="1200"
+            class=""
+            loading="lazy"
+            data-menu-image
+          />
+          <div>
+            <p class="eyebrow" data-menu-label>For the ones with paws</p>
+            <h2 data-menu-title>Small paws. Big personality.</h2>
+            <p data-menu-copy>
+              Playful, patient photographs of your favourite companion, with
+              room to sniff, wander, and just be themselves.
+            </p>
+            <small data-menu-detail>45–90 minute sessions / From $275</small
+            ><a class="text-link" data-menu-link href="pets.html"
+              >Explore the session ↗</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="nav-panel print-menu" id="prints-menu" hidden>
+        <div>
+          <p class="eyebrow">From the archive, to your wall</p>
+          <h2>
+            Good photographs<br />deserve a little<br /><span
+              style="color: var(--orange)"
+              >wall space.</span
+            >
+          </h2>
+          <a href="prints.html" class="text-link">Explore the print shop ↗</a>
+        </div>
+        <a class="menu-editorial" href="print.html?art=forest"
+          ><img
+            src="assets/print-forest.jpg"
+            alt="[Fontainebleau Forest] — Eugène Cuvelier"
+            width="2400"
+            height="1855"
+            class=""
+            loading="lazy"
+          />
+          <h3>The Archive Editions</h3>
+          <p>Three public-domain photographs, thoughtfully presented.</p></a
+        ><a class="menu-editorial" href="prints.html#sizes"
+          ><img
+            src="assets/print-yosemite.jpg"
+            alt="General View of Yosemite — Attributed to Carleton E. Watkins"
+            width="1800"
+            height="2400"
+            class=""
+            loading="lazy"
+          />
+          <h3>Find your perfect fit.</h3>
+          <p>Seven print sizes. Four frame choices. All the details.</p></a
+        >
+      </div>
+    </header>
+    <div class="backdrop" hidden></div>
+    <aside
+      class="mobile-drawer"
+      id="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation"
+      hidden
+    >
+      <div class="drawer-top">
+        <a class="brand" href="index.html" aria-label="Fieldwork Photo home"
+          ><span class="brand-mark" aria-hidden="true"></span
+          ><span>fieldwork<small>photo studio</small></span></a
+        ><button
+          type="button"
+          class="icon-button drawer-close"
+          aria-label="Close navigation"
+        >
+          ×
+        </button>
+      </div>
+      <nav aria-label="Mobile navigation">
+        <details>
+          <summary>
+            <span>Photography sessions</span
+            ><svg
+              class="nav-chevron"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 6 4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </summary>
+          <a href="pets.html">Pets</a><a href="portraits.html">Portraits</a
+          ><a href="family.html">Families</a
+          ><a href="homes.html">Homes & real estate</a
+          ><a href="events.html">Events</a>
+        </details>
+        <a href="portfolio.html">The portfolio</a>
+        <details>
+          <summary>
+            <span>The print shop</span
+            ><svg
+              class="nav-chevron"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m4 6 4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </summary>
+          <a href="prints.html">Archive prints</a
+          ><a href="prints.html#sizes">Sizes &amp; frame options</a
+          ><a href="bag.html">Your print bag</a>
+        </details>
+        <a href="studio.html">The studio</a>
+      </nav>
+      <a class="button orange" href="booking.html">Plan a session ↗</a>
+      <p class="drawer-foot">
+        People. Places. The in-between.<br />Photographs worth keeping.
+      </p>
+    </aside>
+    <main id="main">
+      <noscript
+        ><p class="noscript-note">
+          Explore the pages freely. Print configuration, the local bag, and demo
+          forms require JavaScript.
+        </p></noscript
+      >
+      <section class="page-heading wrap">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="bag.html">Your print bag</a><span>/</span
+          ><span>Demo checkout</span>
+        </nav>
+        <p class="eyebrow">The last little details</p>
+        <h1>
+          Ready for<br /><span class="heading-accent">a place at home.</span>
+        </h1>
+      </section>
+      <section class="wrap">
+        <section
+          class="confirmation"
+          id="order-confirmation"
+          tabindex="-1"
+          hidden
+        >
+          <p class="eyebrow">Demonstration complete</p>
+          <h2>A good-looking<br />practice run.</h2>
+          <p id="confirmation-copy"></p>
+          <a class="button" href="prints.html"
+            >Back to the Archive Editions ↗</a
+          >
+        </section>
+        <div class="empty-state" data-checkout-empty>
+          <h2>Choose a photograph first.</h2>
+          <p>Add a configured print to your bag to try the local checkout.</p>
+          <a class="button" href="prints.html">Find your print ↗</a>
+        </div>
+        <div class="checkout-layout" data-checkout-filled hidden>
+          <div>
+            <p class="form-note">
+              Local demonstration only. No print is purchased or shipped, and no
+              payment or personal delivery information is collected.
+            </p>
+            <form id="checkout-form" class="checkout-form">
+              <h2>01. Sample recipient</h2>
+              <div class="demo-address">
+                Demo customer<br />123 Example Lane<br />Sample City, United
+                States<br /><small
+                  >Illustrative details supplied for the preview</small
+                >
+              </div>
+              <h2>02. How it would find you</h2>
+              <label class="delivery-choice"
+                ><input
+                  type="radio"
+                  name="delivery"
+                  value="shipping"
+                  checked
+                  required
+                /><span
+                  >Sample shipping · $12 / complimentary on product subtotals of
+                  $180+</span
+                ></label
+              ><label class="delivery-choice"
+                ><input type="radio" name="delivery" value="pickup" /><span
+                  >Sample studio pickup · complimentary</span
+                ></label
+              ><label class="acknowledge"
+                ><input type="checkbox" required /><span
+                  >I understand this is a local demonstration. No order or
+                  payment will be submitted.</span
+                ></label
+              ><button class="button orange full" type="submit">
+                Complete demo order ↗
+              </button>
+            </form>
+          </div>
+          <aside class="order-summary" aria-label="Demo checkout summary">
+            <h2>On your wall.</h2>
+            <div class="checkout-items" data-checkout-items></div>
+            <div data-checkout-totals></div>
+            <p>
+              All prices are illustrative USD amounts. Tax is not calculated in
+              this demonstration.
+            </p>
+            <a href="bag.html" class="text-link" style="margin-top: 25px"
+              >Edit your print bag ↗</a
+            >
+          </aside>
+        </div>
+      </section>
+    </main>
+    <section class="callout">
+      <div class="wrap callout-inner">
+        <div>
+          <p class="eyebrow">A good place to start</p>
+          <h2>
+            What would you<br />like to
+            <span class="heading-accent">remember?</span>
+          </h2>
+        </div>
+        <a class="button" href="booking.html"
+          >Tell us a little about it <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </section>
+    <footer class="site-footer wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Fieldwork Photo home"
+            ><span class="brand-mark" aria-hidden="true"></span
+            ><span>fieldwork<small>photo studio</small></span></a
+          >
+          <p>
+            People, places, and the moments in between. A thoughtful photography
+            studio concept for a life well documented.
+          </p>
+        </div>
+        <div>
+          <h2>Photography</h2>
+          <nav aria-label="Photography services">
+            <a href="pets.html">Pets</a><a href="portraits.html">Portraits</a
+            ><a href="family.html">Families</a
+            ><a href="homes.html">Homes & real estate</a
+            ><a href="events.html">Events</a>
+          </nav>
+        </div>
+        <div>
+          <h2>On your wall</h2>
+          <nav aria-label="Print shop links">
+            <a href="prints.html">The Archive Editions</a
+            ><a href="prints.html#sizes">Print size guide</a
+            ><a href="print.html">Choose a frame</a
+            ><a href="bag.html">Your print bag</a>
+          </nav>
+        </div>
+        <div>
+          <h2>The details</h2>
+          <nav aria-label="Studio links">
+            <a href="portfolio.html">The portfolio</a
+            ><a href="studio.html">Our approach</a
+            ><a href="booking.html">Plan a session</a
+            ><a href="studio.html#questions">Common questions</a
+            ><a href="assets/sources.txt">Photo credits &amp; licenses</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Fieldwork Photo · Fictional studio preview</span
+        ><span
+          >Licensed illustrative portfolio · Public-domain archive prints · No
+          real bookings or orders</span
+        ><a href="#main">Back to top ↑</a>
+      </div>
+    </footer>
+    <div class="toast" id="bag-toast" role="status" hidden>
+      <span data-toast-message></span><a href="bag.html">View bag ↗</a>
+    </div>
+  </body>
+</html>

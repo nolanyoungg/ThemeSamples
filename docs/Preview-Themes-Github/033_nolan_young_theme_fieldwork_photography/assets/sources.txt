@@ -1,0 +1,153 @@
+FIELDWORK PHOTO — PHOTOGRAPHY SOURCES AND REUSE
+Source and license checks: 2026-10-07
+
+No AI-generated images are used. All raster assets were obtained from the
+primary sources below. Service imagery and print inventory use separate
+licensing appropriate to their roles.
+
+SERVICE AND PORTFOLIO IMAGERY — PEXELS LICENSE
+https://www.pexels.com/license/
+Free use and modification for websites and templates is permitted.
+Attribution is appreciated but not required. Do not sell unaltered copies
+as physical prints, redistribute on stock/wallpaper platforms, use images
+as a trademark, or imply endorsement by the people or brands depicted.
+The Pexels photographs illustrate this fictional portfolio; Fieldwork does
+not claim to have photographed them. They are NOT offered as print products.
+The stock models are not presented as clients, staff, or endorsers.
+Photos were downloaded as optimized 1800-pixel-wide JPEGs. CSS crops them
+for layout and adds overlays in hero sections. There are no generative edits.
+
+pets-sunset.jpg
+Photographer: Helena Lopes
+Source: https://www.pexels.com/photo/golden-retriever-on-brown-grass-field-4725941/
+Download: https://images.pexels.com/photos/4725941/pexels-photo-4725941.jpeg?auto=compress&cs=tinysrgb&w=1800
+Subject: A golden retriever in a meadow beneath a low evening sun
+Local dimensions: 1800 x 1200 pixels.
+
+pets-garden.jpg
+Photographer: Mithul Varshan
+Source: https://www.pexels.com/photo/close-up-photo-of-dog-2408649/
+Download: https://images.pexels.com/photos/2408649/pexels-photo-2408649.jpeg?auto=compress&cs=tinysrgb&w=1800
+Subject: A golden retriever looking up from a green garden
+Local dimensions: 1800 x 1350 pixels.
+
+portrait-mono.jpg
+Photographer: P G
+Source: https://www.pexels.com/photo/portrait-of-a-smiling-woman-in-outdoor-setting-29933012/
+Download: https://images.pexels.com/photos/29933012/pexels-photo-29933012.jpeg?auto=compress&cs=tinysrgb&w=1800
+Subject: Black-and-white portrait of a smiling woman outdoors
+Local dimensions: 1800 x 3200 pixels.
+
+portrait-natural.jpg
+Photographer: Mayra Lopes
+Source: https://www.pexels.com/photo/portrait-of-a-woman-outdoors-with-natural-background-32022107/
+Download: https://images.pexels.com/photos/32022107/pexels-photo-32022107.jpeg?auto=compress&cs=tinysrgb&w=1800
+Subject: A woman looking toward the camera beside a tree in natural light
+Local dimensions: 1800 x 2700 pixels.
+
+family-play.jpg
+Photographer: Nataliya Vaitkevich
+Source: https://www.pexels.com/photo/black-and-white-photo-of-a-happy-family-walking-on-the-shore-of-a-beach-4452208/
+Download: https://images.pexels.com/photos/4452208/pexels-photo-4452208.jpeg?auto=compress&cs=tinysrgb&w=1800
+Subject: Black-and-white photograph of parents playing with their young child at the beach
+Local dimensions: 1800 x 2700 pixels.
+
+family-shore.jpg
+Photographer: Tatiana Syrikova
+Source: https://www.pexels.com/photo/father-and-child-walking-on-seashore-3968116/
+Download: https://images.pexels.com/photos/3968116/pexels-photo-3968116.jpeg?auto=compress&cs=tinysrgb&w=1800
+Subject: A father and child walking beside the sea in evening light
+Local dimensions: 1800 x 2700 pixels.
+
+home-sunlit.jpg
+Photographer: Peter Vang
+Source: https://www.pexels.com/photo/spacious-modern-living-room-interior-design-37192236/
+Download: https://images.pexels.com/photos/37192236/pexels-photo-37192236.jpeg?auto=compress&cs=tinysrgb&w=1800
+Subject: A bright living room with pale sofas, tall windows, and a wooden railing
+Local dimensions: 1800 x 1012 pixels.
+
+home-minimal.jpg
+Photographer: Viaceslav Kat
+Source: https://www.pexels.com/photo/interior-design-of-a-house-1571460/
+Download: https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1800
+Subject: A contemporary living room with a pale sofa and a floating wooden staircase
+Local dimensions: 1800 x 1157 pixels.
+
+event-tables.jpg
+Photographer: Jonathan Borba
+Source: https://www.pexels.com/photo/tables-prepared-for-a-party-with-decorative-lights-and-garlands-9714791/
+Download: https://images.pexels.com/photos/9714791/pexels-photo-9714791.jpeg?auto=compress&cs=tinysrgb&w=1800
+Subject: An event space set with wooden tables, flowers, and warm hanging lights
+Local dimensions: 1800 x 1200 pixels.
+
+event-celebration.jpg
+Photographer: Pavel Danilyuk
+Source: https://www.pexels.com/photo/people-celebrating-happily-6405655/
+Download: https://images.pexels.com/photos/6405655/pexels-photo-6405655.jpeg?auto=compress&cs=tinysrgb&w=1800
+Subject: A group of adults laughing together at an indoor celebration
+Local dimensions: 1800 x 1202 pixels.
+
+PRINT COLLECTION — THE MET OPEN ACCESS / CC0
+Policy: https://www.metmuseum.org/hubs/open-access
+License: https://creativecommons.org/publicdomain/zero/1.0/
+Each selected object record identifies its image as Public Domain.
+The Met API also returned isPublicDomain: true and a primaryImage URL for
+all three selected objects. The Met makes these images available for free
+and unrestricted reuse under CC0, including commercial reproduction.
+The museum name is used only to identify the source. No logo or endorsement
+is used or implied. Original artists remain named on the product pages.
+These are illustrative reproduction products, not original antique prints.
+The sample assets are optimized web previews, not production print masters.
+For physical production, obtain the source-resolution files and check the
+selected print size, paper, colour, and resolution with the chosen lab.
+
+print-forest.jpg
+Title: [Fontainebleau Forest]
+Artist: Eugène Cuvelier
+Date: early 1860s
+Object page: https://www.metmuseum.org/art/collection/search/265904
+API: https://collectionapi.metmuseum.org/public/collection/v1/objects/265904
+Image download: https://images.metmuseum.org/CRDImages/ph/original/DT1170.jpg
+Public-domain flag: true
+Museum credit line: Purchase, The Howard Gilman Foundation and Joyce and Robert Menschel Gifts, 1988
+Modifications: proportionally resized to a maximum 2400 pixels on the long
+edge and JPEG-encoded at quality 90. Product previews preserve the complete
+source image, including historical margins, with CSS paper and frame styling.
+
+print-yosemite.jpg
+Title: General View of Yosemite
+Artist: Attributed to Carleton E. Watkins
+Date: ca. 1872, printed ca. 1876
+Object page: https://www.metmuseum.org/art/collection/search/264903
+API: https://collectionapi.metmuseum.org/public/collection/v1/objects/264903
+Image download: https://images.metmuseum.org/CRDImages/ph/original/DP152189.jpg
+Public-domain flag: true
+Museum credit line: Gift of Carole and Irwin Lainoff, Ruth P. Lasser and Joseph R. Lasser, Mr. and Mrs. John T. Marvin, Martin E. and Joan Messinger, Richard L. Yett and Sheri and Paul Siegel, 1986
+Modifications: proportionally resized to a maximum 2400 pixels on the long
+edge and JPEG-encoded at quality 90. Product previews preserve the complete
+source image, including historical margins, with CSS paper and frame styling.
+
+print-cape-horn.jpg
+Title: Cape Horn, Columbia River, Oregon
+Artist: Carleton E. Watkins
+Date: 1867
+Object page: https://www.metmuseum.org/art/collection/search/286513
+API: https://collectionapi.metmuseum.org/public/collection/v1/objects/286513
+Image download: https://images.metmuseum.org/CRDImages/ph/original/DP124381.jpg
+Public-domain flag: true
+Museum credit line: Gilman Collection, Gift of The Howard Gilman Foundation, 2005
+Modifications: proportionally resized to a maximum 2400 pixels on the long
+edge and JPEG-encoded at quality 90. Product previews preserve the complete
+source image, including historical margins, with CSS paper and frame styling.
+
+OTHER ASSETS
+Inter: https://github.com/rsms/inter
+SIL Open Font License 1.1, retained in inter-license.txt.
+DM Serif Display: https://github.com/google/fonts/tree/main/ofl/dmserifdisplay
+SIL Open Font License 1.1, retained in dm-serif-display-license.txt.
+Regular font: https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFnOHM81r4j6k0gjAW3mujVU2B2K_c.ttf
+Italic font: https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFhOHM81r4j6k0gjAW3mujVU2B2G_Vx1w.ttf
+Fonts are hosted locally; no Google Fonts request occurs at runtime.
+Brand mark, interface icons, layout, frame previews, fictional service and
+product copy, and JavaScript are original code for this sample.
+No paid template source, generated imagery, or external runtime assets are used.
