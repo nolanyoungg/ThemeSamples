@@ -1,0 +1,132 @@
+NORTHLAKE PHOTOGRAPHY — SAMPLE 034
+Sources and reuse checks: 2026-10-08
+
+This fictional photography studio uses real, licensed illustrative images.
+No AI-generated images, paid template assets, or photo products are included.
+The studio does not claim authorship of the reference photos. People depicted
+are not presented as clients, staff, or endorsers. Stock service scenes are
+not represented as having been photographed in Lake George.
+
+USGS: the individual source pages explicitly say Sources/Usage: Public Domain.
+Pexels: https://www.pexels.com/license/
+Free website use and modification permitted; copyright remains with creators.
+Do not imply endorsement, sell unaltered copies, redistribute as stock, or
+use the photographs as a trademark. Visible credits and source links included.
+
+Modifications: photos proportionally resized to at most 2400 x 2600 pixels,
+JPEG quality 88 for web use; CSS object-fit crops and hero overlays in layouts.
+No generative alterations. Assets are local; no image network calls at runtime.
+
+adirondack.jpg
+Title: The long way home
+Creator: James Mirakian / Pexels
+Source: https://www.pexels.com/photo/scenic-autumn-view-of-adirondack-mountains-28982377/
+License: Pexels License
+Location/role: Adirondack Mountains, New York
+Download: https://images.pexels.com/photos/28982377/pexels-photo-28982377.jpeg?auto=compress&cs=tinysrgb&w=2400
+
+paradox-lake.jpg
+Title: Autumn reflected
+Creator: Gregory Walsh / USGS
+Source: https://www.usgs.gov/media/images/autumn-colors-reflected-paradox-lake-adirondack-mountains
+License: Public domain
+Location/role: Paradox Lake, Adirondacks
+Download: https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/NEB%20photo%2003%20IMG_4519%20boat%20on%20lake%20-%20Gregory%20Walsh.jpg
+
+lake-george.jpg
+Title: A little Lake George color
+Creator: Sara Breitmeyer / USGS
+Source: https://www.usgs.gov/media/images/lake-george-fall
+License: Public domain
+Location/role: Lake George, New York
+Download: https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/LakeGeorge.jpg
+
+lake-boat.jpg
+Title: On the water
+Creator: Connor McManus / Pexels
+Source: https://www.pexels.com/it-it/foto/foresta-navigando-alberi-collina-18710252/
+License: Pexels License
+Location/role: Lake George, New York
+Download: https://images.pexels.com/photos/18710252/pexels-photo-18710252.jpeg?auto=compress&cs=tinysrgb&w=2000
+
+mirror-lake.jpg
+Title: The quieter shore
+Creator: James Mirakian / Pexels
+Source: https://www.pexels.com/photo/peaceful-mirror-lake-reflection-in-autumn-28963809/
+License: Pexels License
+Location/role: Mirror Lake, Lake Placid
+Download: https://images.pexels.com/photos/28963809/pexels-photo-28963809.jpeg?auto=compress&cs=tinysrgb&w=2400
+
+pet-leaves.jpg
+Title: A familiar companion
+Creator: seyfi durmaz / Pexels
+Source: https://www.pexels.com/photo/a-dog-sitting-on-fallen-leaves-5321485/
+License: Pexels License
+Location/role: Autumn portrait study
+Download: https://images.pexels.com/photos/5321485/pexels-photo-5321485.jpeg?auto=compress&cs=tinysrgb&w=2000
+
+pet-walk.jpg
+Title: Follow their lead
+Creator: Arindam Raha / Pexels
+Source: https://www.pexels.com/photo/dog-walking-on-grass-with-autumn-leaves-17588306/
+License: Pexels License
+Location/role: Woodland study
+Download: https://images.pexels.com/photos/17588306/pexels-photo-17588306.jpeg?auto=compress&cs=tinysrgb&w=2000
+
+portrait-autumn.jpg
+Title: In your own season
+Creator: Matthias Cooper / Pexels
+Source: https://www.pexels.com/photo/woman-wearing-brown-sweater-1674403/
+License: Pexels License
+Location/role: Natural-light portrait study
+Download: https://images.pexels.com/photos/1674403/pexels-photo-1674403.jpeg?auto=compress&cs=tinysrgb&w=2000
+
+family-autumn.jpg
+Title: The in-between moments
+Creator: Katia Damyan / Pexels
+Source: https://www.pexels.com/photo/family-enjoying-their-free-time-in-autumn-forest-19092033/
+License: Pexels License
+Location/role: Family session study
+Download: https://images.pexels.com/photos/19092033/pexels-photo-19092033.jpeg?auto=compress&cs=tinysrgb&w=2000
+
+family-walk.jpg
+Title: Room to wander
+Creator: Katia Damyan / Pexels
+Source: https://www.pexels.com/photo/family-standing-in-forest-in-autumn-19092031/
+License: Pexels License
+Location/role: Woodland family study
+Download: https://images.pexels.com/photos/19092031/pexels-photo-19092031.jpeg?auto=compress&cs=tinysrgb&w=2000
+
+home-minimal.jpg
+Title: The feeling of home
+Creator: Viaceslav Kat / Pexels
+Source: https://www.pexels.com/photo/interior-design-of-a-house-1571460/
+License: Pexels License
+Location/role: Interior photography study
+Download: https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1800
+
+event-tables.jpg
+Title: Before everyone arrives
+Creator: Jonathan Borba / Pexels
+Source: https://www.pexels.com/photo/tables-prepared-for-a-party-with-decorative-lights-and-garlands-9714791/
+License: Pexels License
+Location/role: Event detail study
+Download: https://images.pexels.com/photos/9714791/pexels-photo-9714791.jpeg?auto=compress&cs=tinysrgb&w=1800
+
+event-celebration.jpg
+Title: All together
+Creator: Pavel Danilyuk / Pexels
+Source: https://www.pexels.com/photo/people-celebrating-happily-6405655/
+License: Pexels License
+Location/role: Candid event study
+Download: https://images.pexels.com/photos/6405655/pexels-photo-6405655.jpeg?auto=compress&cs=tinysrgb&w=1800
+
+LOCAL FONTS
+DM Serif Display: https://github.com/google/fonts/tree/main/ofl/dmserifdisplay
+Regular and italic; SIL OFL 1.1 in dm-serif-display-license.txt.
+Inter: https://github.com/rsms/inter
+Regular, medium, semibold; SIL OFL 1.1 in inter-license.txt.
+Fonts copied with licenses from this repository's sample 033.
+
+Original vector brand mark and interface icons; no external icon dependencies.
+All form interactions are local demonstrations. No data is transmitted or stored.
